@@ -1,0 +1,6 @@
+2024-11-15 11:30:49,886 - INFO - Bluetooth_SUL.py:58 - Advertiser Address: 9c:95:6e:40:0f:bb
+2024-11-15 11:30:49,887 - DEBUG - key.py:71 - ia: b52dd3546f31 ia_type: 01 ra: 9c956e400fbb ra_type: 00 role: 1
+2024-11-15 11:30:49,899 - DEBUG - key.py:71 - ia: 63f7cc24c9d1 ia_type: 01 ra: 9c956e400fbb ra_type: 00 role: 1
+2024-11-15 11:30:49,910 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-11-15 11:30:51,347 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-11-15 11:30:53,549 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ

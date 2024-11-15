@@ -1,0 +1,24 @@
+digraph esp_ble_security_l2cap {
+s0 [label="s0"];
+s1 [label="s1"];
+s0 -> s0  [label="ll_base/('BTLE', 'BTLE_CTRL', 'BTLE_DATA', 'L2CAP_CmdHdr', 'L2CAP_Connection_Parameter_Update_Request', 'L2CAP_Hdr', 'LL_VERSION_IND')|('BTLE', 'BTLE_CTRL', 'BTLE_DATA', 'LL_FEATURE_RSP')|('BTLE', 'BTLE_CTRL', 'BTLE_DATA', 'LL_LENGTH_RSP')"];
+s0 -> s0  [label="sm_legency/('BTLE', 'BTLE_DATA', 'L2CAP_CmdHdr', 'L2CAP_Connection_Parameter_Update_Request', 'L2CAP_Hdr', 'SM_Hdr', 'SM_Random')|('BTLE', 'BTLE_DATA', 'L2CAP_Hdr', 'SM_Confirm', 'SM_Hdr')|('BTLE', 'BTLE_DATA', 'L2CAP_Hdr', 'SM_Hdr', 'SM_Pairing_Response')"];
+s0 -> s0  [label="ll_enc_req_pkt/BTLE|BTLE_CTRL|BTLE_DATA|LL_ENC_RSP|LL_REJECT_IND"];
+s0 -> s0  [label="ll_enc_rsp_pkt/BTLE|BTLE_CTRL|BTLE_DATA|LL_UNKNOWN_RSP"];
+s0 -> s1  [label="ll_start_enc_req_pkt/BTLE|BTLE_CTRL|BTLE_DATA|LL_UNKNOWN_RSP"];
+s0 -> s1  [label="ll_start_enc_rsp_pkt/BTLE|BTLE_CTRL|BTLE_DATA|LL_UNKNOWN_RSP"];
+s0 -> s1  [label="ll_pause_enc_req_pkt/BTLE|BTLE_CTRL|BTLE_DATA|LL_PAUSE_ENC_RSP"];
+s0 -> s0  [label="ll_pause_enc_rsp_pkt/BTLE|BTLE_CTRL|BTLE_DATA|LL_UNKNOWN_RSP"];
+s0 -> s0  [label="att_read_req_pkt/BTLE"];
+s1 -> s1  [label="ll_base/('BTLE', 'BTLE_CTRL', 'BTLE_DATA', 'LL_UNKNOWN_RSP')"];
+s1 -> s1  [label="sm_legency/None"];
+s1 -> s1  [label="ll_enc_req_pkt/BTLE|BTLE_CTRL|BTLE_DATA|LL_UNKNOWN_RSP"];
+s1 -> s1  [label="ll_enc_rsp_pkt/BTLE|BTLE_CTRL|BTLE_DATA|LL_UNKNOWN_RSP"];
+s1 -> s1  [label="ll_start_enc_req_pkt/BTLE|BTLE_CTRL|BTLE_DATA|LL_UNKNOWN_RSP"];
+s1 -> s1  [label="ll_start_enc_rsp_pkt/BTLE|BTLE_CTRL|BTLE_DATA|LL_UNKNOWN_RSP"];
+s1 -> s1  [label="ll_pause_enc_req_pkt/BTLE|BTLE_CTRL|BTLE_DATA|LL_UNKNOWN_RSP"];
+s1 -> s1  [label="ll_pause_enc_rsp_pkt/BTLE|BTLE_CTRL|BTLE_DATA|LL_UNKNOWN_RSP"];
+s1 -> s1  [label="att_read_req_pkt/empty"];
+__start0 [label="", shape=none];
+__start0 -> s0  [label=""];
+}

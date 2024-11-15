@@ -1,0 +1,13 @@
+digraph esp_ble_security_l2cap {
+s0 [label="s0"];
+s1 [label="s1"];
+s2 [label="s2"];
+s0 -> s2  [label="ll_enc_req_pkt/BTLE|BTLE_CTRL|BTLE_DATA|LL_ENC_RSP|LL_START_ENC_REQ"];
+s0 -> s2  [label="ll_start_enc_rsp_pkt/BTLE|BTLE_CTRL|BTLE_DATA|L2CAP_Hdr|Raw"];
+s1 -> s2  [label="ll_enc_req_pkt/empty"];
+s1 -> s2  [label="ll_start_enc_rsp_pkt/empty"];
+s2 -> s2  [label="ll_enc_req_pkt/empty"];
+s2 -> s2  [label="ll_start_enc_rsp_pkt/empty"];
+__start0 [label="", shape=none];
+__start0 -> s0  [label=""];
+}

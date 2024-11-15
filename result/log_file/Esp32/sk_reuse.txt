@@ -1,0 +1,974 @@
+Advertiser Address:  e8:31:cd:73:f8:e2
+config_file:  /home/yangting/Documents/Ble_Test/srcs/Config_File/Esp32/esp_ble_security.ini
+Master Address:  84:bc:ea:de:00:df
+Advertiser Address:  e8:31:cd:73:f8:e2
+BTLE_ADV_IND          PDU_type=0  
+BTLE_ADV_DIRECT_IND   PDU_type=1  
+BTLE_ADV_NONCONN_IND  PDU_type=2  
+BTLE_SCAN_REQ         PDU_type=3  
+BTLE_SCAN_RSP         PDU_type=4  
+BTLE_CONNECT_REQ      PDU_type=5  
+BTLE_ADV_SCAN_IND     PDU_type=6  
+LL_CONNECTION_UPDATE_IND  opcode=0    
+LL_CHANNEL_MAP_IND    opcode=1    
+LL_TERMINATE_IND      opcode=2    
+LL_ENC_REQ            opcode=3    
+LL_ENC_RSP            opcode=4    
+LL_START_ENC_REQ      opcode=5    
+LL_START_ENC_RSP      opcode=6    
+LL_UNKNOWN_RSP        opcode=7    
+LL_FEATURE_REQ        opcode=8    
+LL_FEATURE_RSP        opcode=9    
+LL_PAUSE_ENC_REQ      opcode=10   
+LL_PAUSE_ENC_RSP      opcode=11   
+LL_VERSION_IND        opcode=12   
+LL_REJECT_IND         opcode=13   
+LL_SLAVE_FEATURE_REQ  opcode=14   
+LL_CONNECTION_PARAM_REQ  opcode=15   
+LL_CONNECTION_PARAM_RSP  opcode=16   
+LL_REJECT_EXT_IND     opcode=17   
+LL_PING_REQ           opcode=18   
+LL_PING_RSP           opcode=19   
+LL_LENGTH_REQ         opcode=20   
+LL_LENGTH_RSP         opcode=21   
+LL_PHY_REQ            opcode=22   
+LL_PHY_RSP            opcode=23   
+LL_PHY_UPDATE_IND     opcode=24   
+LL_MIN_USED_CHANNELS_IND  opcode=25   
+LL_20                 opcode=32   
+ATT_Error_Response    opcode=1    
+ATT_Exchange_MTU_Request  opcode=2    
+ATT_Exchange_MTU_Response  opcode=3    
+ATT_Find_Information_Request  opcode=4    
+ATT_Find_Information_Response  opcode=5    
+ATT_Find_By_Type_Value_Request  opcode=6    
+ATT_Find_By_Type_Value_Response  opcode=7    
+ATT_Read_By_Type_Request_128bit  opcode=8    
+ATT_Read_By_Type_Request  opcode=8    
+ATT_Read_By_Type_Response  opcode=9    
+ATT_Read_Request      opcode=10   
+ATT_Read_Response     opcode=11   
+ATT_Read_Blob_Request  opcode=12   
+ATT_Read_Blob_Response  opcode=13   
+ATT_Read_Multiple_Request  opcode=14   
+ATT_Read_Multiple_Response  opcode=15   
+ATT_Read_By_Group_Type_Request  opcode=16   
+ATT_Read_By_Group_Type_Response  opcode=17   
+ATT_Write_Request     opcode=18   
+ATT_Write_Response    opcode=19   
+ATT_Prepare_Write_Request  opcode=22   
+ATT_Prepare_Write_Response  opcode=23   
+ATT_Execute_Write_Request  opcode=24   
+ATT_Execute_Write_Response  opcode=25   
+ATT_Read_Multiple_Variable_Request  opcode=32   
+ATT_Read_Multiple_Variable_Response  opcode=33   
+ATT_Write_Command     opcode=82   
+ATT_Handle_Value_Notification  opcode=27   
+ATT_Handle_Value_Indication  opcode=29   
+ATT_Handle_Value_Confirmation  opcode=30   
+ATT_Multiple_Handle_Value_Notification  opcode=35   
+ATT_Signed_Write_Command  opcode=210  
+L2CAP_CmdRej          code=1      
+L2CAP_ConnReq         code=2      
+L2CAP_ConnResp        code=3      
+L2CAP_ConfReq         code=4      
+L2CAP_ConfResp        code=5      
+L2CAP_DisconnReq      code=6      
+L2CAP_DisconnResp     code=7      
+L2CAP_EchoReq         code=8      
+L2CAP_EchoResp        code=9      
+L2CAP_InfoReq         code=10     
+L2CAP_InfoResp        code=11     
+L2CAP_Create_Channel_Request  code=12     
+L2CAP_Create_Channel_Response  code=13     
+L2CAP_Move_Channel_Request  code=14     
+L2CAP_Move_Channel_Response  code=15     
+L2CAP_Move_Channel_Confirmation_Request  code=16     
+L2CAP_Move_Channel_Confirmation_Response  code=17     
+L2CAP_Connection_Parameter_Update_Request  code=18     
+L2CAP_Connection_Parameter_Update_Response  code=19     
+L2CAP_LE_Credit_Based_Connection_Request  code=20     
+L2CAP_LE_Credit_Based_Connection_Response  code=21     
+L2CAP_LE_Flow_Control_Credit_IND  code=22     
+L2CAP_Credit_Based_Connection_Request  code=23     
+L2CAP_Credit_Based_Connection_Response  code=24     
+L2CAP_Credit_Based_Reconfigure_Request  code=25     
+L2CAP_Credit_Based_Reconfigure_Response  code=26     
+SM_Pairing_Request    sm_command=1
+SM_Pairing_Response   sm_command=2
+SM_Confirm            sm_command=3
+SM_Random             sm_command=4
+SM_Failed             sm_command=5
+SM_Encryption_Information  sm_command=6
+SM_Master_Identification  sm_command=7
+SM_Identity_Information  sm_command=8
+SM_Identity_Address_Information  sm_command=9
+SM_Signing_Information  sm_command=10
+SM_Security_Request   sm_command=11
+SM_Public_Key         sm_command=12
+SM_DHKey_Check        sm_command=13
+SM_Keypress_Notification  sm_command=14
+-----------------Pre Start-----------------
+Master Address:  8a:11:94:15:c5:9d
+Advertiser Address:  e8:31:cd:73:f8:e2
+BTLE_ADV_IND          PDU_type=0  
+BTLE_ADV_DIRECT_IND   PDU_type=1  
+BTLE_ADV_NONCONN_IND  PDU_type=2  
+BTLE_SCAN_REQ         PDU_type=3  
+BTLE_SCAN_RSP         PDU_type=4  
+BTLE_CONNECT_REQ      PDU_type=5  
+BTLE_ADV_SCAN_IND     PDU_type=6  
+LL_CONNECTION_UPDATE_IND  opcode=0    
+LL_CHANNEL_MAP_IND    opcode=1    
+LL_TERMINATE_IND      opcode=2    
+LL_ENC_REQ            opcode=3    
+LL_ENC_RSP            opcode=4    
+LL_START_ENC_REQ      opcode=5    
+LL_START_ENC_RSP      opcode=6    
+LL_UNKNOWN_RSP        opcode=7    
+LL_FEATURE_REQ        opcode=8    
+LL_FEATURE_RSP        opcode=9    
+LL_PAUSE_ENC_REQ      opcode=10   
+LL_PAUSE_ENC_RSP      opcode=11   
+LL_VERSION_IND        opcode=12   
+LL_REJECT_IND         opcode=13   
+LL_SLAVE_FEATURE_REQ  opcode=14   
+LL_CONNECTION_PARAM_REQ  opcode=15   
+LL_CONNECTION_PARAM_RSP  opcode=16   
+LL_REJECT_EXT_IND     opcode=17   
+LL_PING_REQ           opcode=18   
+LL_PING_RSP           opcode=19   
+LL_LENGTH_REQ         opcode=20   
+LL_LENGTH_RSP         opcode=21   
+LL_PHY_REQ            opcode=22   
+LL_PHY_RSP            opcode=23   
+LL_PHY_UPDATE_IND     opcode=24   
+LL_MIN_USED_CHANNELS_IND  opcode=25   
+LL_20                 opcode=32   
+ATT_Error_Response    opcode=1    
+ATT_Exchange_MTU_Request  opcode=2    
+ATT_Exchange_MTU_Response  opcode=3    
+ATT_Find_Information_Request  opcode=4    
+ATT_Find_Information_Response  opcode=5    
+ATT_Find_By_Type_Value_Request  opcode=6    
+ATT_Find_By_Type_Value_Response  opcode=7    
+ATT_Read_By_Type_Request_128bit  opcode=8    
+ATT_Read_By_Type_Request  opcode=8    
+ATT_Read_By_Type_Response  opcode=9    
+ATT_Read_Request      opcode=10   
+ATT_Read_Response     opcode=11   
+ATT_Read_Blob_Request  opcode=12   
+ATT_Read_Blob_Response  opcode=13   
+ATT_Read_Multiple_Request  opcode=14   
+ATT_Read_Multiple_Response  opcode=15   
+ATT_Read_By_Group_Type_Request  opcode=16   
+ATT_Read_By_Group_Type_Response  opcode=17   
+ATT_Write_Request     opcode=18   
+ATT_Write_Response    opcode=19   
+ATT_Prepare_Write_Request  opcode=22   
+ATT_Prepare_Write_Response  opcode=23   
+ATT_Execute_Write_Request  opcode=24   
+ATT_Execute_Write_Response  opcode=25   
+ATT_Read_Multiple_Variable_Request  opcode=32   
+ATT_Read_Multiple_Variable_Response  opcode=33   
+ATT_Write_Command     opcode=82   
+ATT_Handle_Value_Notification  opcode=27   
+ATT_Handle_Value_Indication  opcode=29   
+ATT_Handle_Value_Confirmation  opcode=30   
+ATT_Multiple_Handle_Value_Notification  opcode=35   
+ATT_Signed_Write_Command  opcode=210  
+L2CAP_CmdRej          code=1      
+L2CAP_ConnReq         code=2      
+L2CAP_ConnResp        code=3      
+L2CAP_ConfReq         code=4      
+L2CAP_ConfResp        code=5      
+L2CAP_DisconnReq      code=6      
+L2CAP_DisconnResp     code=7      
+L2CAP_EchoReq         code=8      
+L2CAP_EchoResp        code=9      
+L2CAP_InfoReq         code=10     
+L2CAP_InfoResp        code=11     
+L2CAP_Create_Channel_Request  code=12     
+L2CAP_Create_Channel_Response  code=13     
+L2CAP_Move_Channel_Request  code=14     
+L2CAP_Move_Channel_Response  code=15     
+L2CAP_Move_Channel_Confirmation_Request  code=16     
+L2CAP_Move_Channel_Confirmation_Response  code=17     
+L2CAP_Connection_Parameter_Update_Request  code=18     
+L2CAP_Connection_Parameter_Update_Response  code=19     
+L2CAP_LE_Credit_Based_Connection_Request  code=20     
+L2CAP_LE_Credit_Based_Connection_Response  code=21     
+L2CAP_LE_Flow_Control_Credit_IND  code=22     
+L2CAP_Credit_Based_Connection_Request  code=23     
+L2CAP_Credit_Based_Connection_Response  code=24     
+L2CAP_Credit_Based_Reconfigure_Request  code=25     
+L2CAP_Credit_Based_Reconfigure_Response  code=26     
+SM_Pairing_Request    sm_command=1
+SM_Pairing_Response   sm_command=2
+SM_Confirm            sm_command=3
+SM_Random             sm_command=4
+SM_Failed             sm_command=5
+SM_Encryption_Information  sm_command=6
+SM_Master_Identification  sm_command=7
+SM_Identity_Information  sm_command=8
+SM_Identity_Address_Information  sm_command=9
+SM_Signing_Information  sm_command=10
+SM_Security_Request   sm_command=11
+SM_Public_Key         sm_command=12
+SM_DHKey_Check        sm_command=13
+SM_Keypress_Notification  sm_command=14
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE|BTLE_DATA|BTLE_CTRL|LL_FEATURE_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0xeb4fa0
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 1
+     NESN      = 0
+     LLID      = control
+     len       = 9
+###[ BTLE_CTRL ]### 
+        opcode    = LL_FEATURE_RSP
+###[ LL_FEATURE_RSP ]### 
+           feature_set= le_encryption+conn_par_req_proc+ext_reject_ind+slave_init_feat_exch+le_ping+le_data_len_ext+ll_privacy+ext_scan_filter
+
+09ff00000000000000
+RX <--- BTLE|BTLE_CTRL|BTLE_DATA|LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0x63bb4b
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 0
+     NESN      = 0
+     LLID      = start
+     len       = 11
+###[ L2CAP header ]### 
+        len       = 7
+        cid       = 6
+###[ SM header ]### 
+           sm_command= 1
+###[ Pairing Request ]### 
+              iocap     = NoInputNoOutput
+              oob       = Not Present
+              authentication= 13
+              max_key_size= 16
+              initiator_key_distribution= 15
+              responder_key_distribution= 15
+
+TX ---> BTLE|BTLE_DATA|L2CAP_Hdr|SM_Hdr|SM_Pairing_Request
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Pairing_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Pairing_Response
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0x6522d7
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 1
+     NESN      = 0
+     LLID      = start
+     len       = 11
+###[ L2CAP header ]### 
+        len       = 7
+        cid       = 6
+###[ SM header ]### 
+           sm_command= 2
+###[ Pairing Response ]### 
+              iocap     = NoInputNoOutput
+              oob       = Not Present
+              authentication= 9
+              max_key_size= 16
+              initiator_key_distribution= 3
+              responder_key_distribution= 3
+
+RX <--- BTLE|BTLE_DATA|L2CAP_Hdr|SM_Hdr|SM_Pairing_Response
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0xf71e1e
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 0
+     NESN      = 0
+     LLID      = start
+     len       = 69
+###[ L2CAP header ]### 
+        len       = 65
+        cid       = 6
+###[ SM header ]### 
+           sm_command= 12
+###[ Public Key ]### 
+              key_x     = '\\x9b\\xc0\x1dƌT[6\x15\\xa1\\xc4y\x07\\xa2xzB\\xb6ЍOV\\xbb\x0e\x1f\\xdc\\xfaF.\x1f\x15\\xb2'
+              key_y     = 'z&#6\\xd9"Q\x00BЇ\x18\\xb0\\x85\\x84\\x80\\x90ٳ\\x99\\xb6\\x82\x12\\xf0-l3*\\xbe&r\\xfe'
+
+TX ---> BTLE|BTLE_DATA|L2CAP_Hdr|SM_Hdr|SM_Public_Key
+0f1a242beffc9e3a7f585fdc4a90030a87b16ac3aa4c0742c02ea787634933e0
+b01b7ccdb41fc13dc8175978317cb76baf79e4ab766dc7c7c90732d97cc2e21f
+733b7c99ff8b0a81aeb1bf6cccf53332960cef8694b1aaed4200a5fdec00ea02
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Public_Key
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Public_Key
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Confirm
+device_public_key_x 18a4da3ecf45fe246cbdd621b80b313ee0b5858cb4244f62bc0138ce23180a0b
+device_public_key_y 7184c3fe5b5e635262b610f304adbdade3f3c177a1a7883f7a7a7962568e413a
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0xec85c6
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 1
+     NESN      = 0
+     LLID      = start
+     len       = 69
+###[ L2CAP header ]### 
+        len       = 65
+        cid       = 6
+###[ SM header ]### 
+           sm_command= 12
+###[ Public Key ]### 
+              key_x     = '\x18\\xa4\\xda>\\xcfE\\xfe$l\\xbd\\xd6!\\xb8\x0b1>\u0d45\\x8c\\xb4$Ob\\xbc\x018\\xce#\x18\n\x0b'
+              key_y     = 'q\\x84\\xc3\\xfe[^cRb\\xb6\x10\\xf3\x04\\xad\\xbd\\xad\\xe3\\xf3\\xc1w\\xa1\\xa7\\x88?zzybV\\x8eA:'
+
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0x8586ee
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 1
+     NESN      = 0
+     LLID      = start
+     len       = 21
+###[ L2CAP header ]### 
+        len       = 17
+        cid       = 6
+###[ SM header ]### 
+           sm_command= 3
+###[ Pairing Confirm ]### 
+              confirm   = '\\xe9\\xa3\\xfa\\x9d\\xb7M\\xf3\\x97\\x84=6\\xa1\x01G\\x8a\x05'
+
+RX <--- BTLE|BTLE_DATA|L2CAP_Hdr|SM_Confirm|SM_Hdr|SM_Public_Key
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0xb94551
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 0
+     NESN      = 0
+     LLID      = start
+     len       = 21
+###[ L2CAP header ]### 
+        len       = 17
+        cid       = 6
+###[ SM header ]### 
+           sm_command= 4
+###[ Pairing Random ]### 
+              random    = '\\xaa\\x9eTU\\xab\\x9eTUZ\\x9eTU[\\x9eTU'
+
+TX ---> BTLE|BTLE_DATA|L2CAP_Hdr|SM_Hdr|SM_Random
+mrnd 01a90fe4f957b9dc119b43a4df096b38
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Random
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Random
+srnd 039ae5e0968235ea427e0036efeb2437
+dhkey_check 1d122bbd3b9688c3a33da5297c88c9d0
+calculate_DHKey
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0x16770f
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 0
+     NESN      = 1
+     LLID      = start
+     len       = 21
+###[ L2CAP header ]### 
+        len       = 17
+        cid       = 6
+###[ SM header ]### 
+           sm_command= 4
+###[ Pairing Random ]### 
+              random    = '\x03\\x9a\\xe5\\xe0\\x96\\x825\\xeaB~\x006\\xef\\xeb$7'
+
+RX <--- BTLE|BTLE_DATA|L2CAP_Hdr|SM_Hdr|SM_Random
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0x70fbf
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 0
+     NESN      = 0
+     LLID      = start
+     len       = 21
+###[ L2CAP header ]### 
+        len       = 17
+        cid       = 6
+###[ SM header ]### 
+           sm_command= 13
+###[ DHKey Check ]### 
+              dhkey_check= '\\x9e?\\xdaz\\xeeC<\tq#\\x90v\\xc8lu\\xd9'
+
+TX ---> BTLE|BTLE_DATA|L2CAP_Hdr|SM_Hdr|SM_DHKey_Check
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_DHKey_Check
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_DHKey_Check
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0x1d6b73
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 1
+     NESN      = 0
+     LLID      = start
+     len       = 21
+###[ L2CAP header ]### 
+        len       = 17
+        cid       = 6
+###[ SM header ]### 
+           sm_command= 13
+###[ DHKey Check ]### 
+              dhkey_check= '\\xbb\x05\u07b2F\\x83\\xaa\\xfa\\xf2m\\xd3Mr\\xd6o\\xa9'
+
+RX <--- BTLE|BTLE_DATA|L2CAP_Hdr|SM_DHKey_Check|SM_Hdr
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0xc5a44a
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 0
+     NESN      = 0
+     LLID      = control
+     len       = 23
+###[ BTLE_CTRL ]### 
+        opcode    = LL_ENC_REQ
+###[ LL_ENC_REQ ]### 
+           rand      = 0x0
+           ediv      = 0x0
+           skdm      = 0x1a2e7071f5b3edc5
+           ivm       = 0x38dd95e1
+
+TX ---> BTLE|BTLE_DATA|BTLE_CTRL|LL_ENC_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_ENC_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_ENC_RSP
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_START_ENC_REQ
+ltk f6bf269e2449103e170ae519b3c94538
+skd 18186dcc3cd3d9c48d46b98a4d19e534
+sk c27bbfe89609c4dbc7399d3f84a3cd89
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0xcf25b2
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 1
+     NESN      = 0
+     LLID      = control
+     len       = 13
+###[ BTLE_CTRL ]### 
+        opcode    = LL_ENC_RSP
+###[ LL_ENC_RSP ]### 
+           skds      = 0x34e5194d8ab9468d
+           ivs       = 0x6fd7f868
+
+048d46b98a4d19e53468f8d76f
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0x8c7afa
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 0
+     NESN      = 1
+     LLID      = control
+     len       = 1
+###[ BTLE_CTRL ]### 
+        opcode    = LL_START_ENC_REQ
+###[ LL_START_ENC_REQ ]### 
+
+05
+RX <--- BTLE|BTLE_CTRL|BTLE_DATA|LL_ENC_RSP|LL_START_ENC_REQ
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0xb3ee05
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 0
+     NESN      = 0
+     LLID      = control
+     len       = 1
+###[ BTLE_CTRL ]### 
+        opcode    = LL_START_ENC_RSP
+###[ LL_START_ENC_RSP ]### 
+
+TX ---> BTLE|BTLE_DATA|BTLE_CTRL|LL_START_ENC_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / Raw
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / Raw
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / Raw
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / Raw
+aaaaaaaaaaa+Encrypted
+iv c6ba280668f8d76f
+skd 18186dcc3cd3d9c48d46b98a4d19e534
+sk c27bbfe89609c4dbc7399d3f84a3cd89
+ltk f6bf269e2449103e170ae519b3c94538
+raw_pkt c7
+dec_pkt 06
+--------decrypted packet---------
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0x0
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 1
+     NESN      = 0
+     LLID      = control
+     len       = 1
+###[ BTLE_CTRL ]### 
+        opcode    = LL_START_ENC_RSP
+###[ LL_START_ENC_RSP ]### 
+
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0x0
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 1
+     NESN      = 0
+     LLID      = control
+     len       = 1
+###[ BTLE_CTRL ]### 
+        opcode    = LL_START_ENC_RSP
+###[ LL_START_ENC_RSP ]### 
+
+06
+aaaaaaaaaaa+Encrypted
+iv c6ba280668f8d76f
+skd 18186dcc3cd3d9c48d46b98a4d19e534
+sk c27bbfe89609c4dbc7399d3f84a3cd89
+ltk f6bf269e2449103e170ae519b3c94538
+raw_pkt e2c93e5e5fa7cb98a600d3c883d56ee15017faab45
+dec_pkt 11000600086222967154081deedf02861d007a83d6
+--------decrypted packet---------
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0x0
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 0
+     NESN      = 1
+     LLID      = start
+     len       = 21
+###[ L2CAP header ]### 
+        len       = 17
+        cid       = 6
+###[ SM header ]### 
+           sm_command= 8
+###[ Identity Information ]### 
+              irk       = 'b"\\x96qT\x08\x1d\\xee\\xdf\x02\\x86\x1d\x00z\\x83\\xd6'
+
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0x0
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 0
+     NESN      = 1
+     LLID      = start
+     len       = 21
+###[ L2CAP header ]### 
+        len       = 17
+        cid       = 6
+###[ SM header ]### 
+           sm_command= 8
+###[ Identity Information ]### 
+              irk       = 'b"\\x96qT\x08\x1d\\xee\\xdf\x02\\x86\x1d\x00z\\x83\\xd6'
+
+aaaaaaaaaaa+Encrypted
+iv c6ba280668f8d76f
+skd 18186dcc3cd3d9c48d46b98a4d19e534
+sk c27bbfe89609c4dbc7399d3f84a3cd89
+ltk f6bf269e2449103e170ae519b3c94538
+raw_pkt 0b9da114f9d78e94c833752a
+dec_pkt 080006000900e2f873cd31e8
+--------decrypted packet---------
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0x0
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 1
+     NESN      = 0
+     LLID      = start
+     len       = 12
+###[ L2CAP header ]### 
+        len       = 8
+        cid       = 6
+###[ SM header ]### 
+           sm_command= 9
+###[ Identity Address Information ]### 
+              atype     = public
+              address   = e8:31:cd:73:f8:e2
+
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0x0
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 1
+     NESN      = 0
+     LLID      = start
+     len       = 12
+###[ L2CAP header ]### 
+        len       = 8
+        cid       = 6
+###[ SM header ]### 
+           sm_command= 9
+###[ Identity Address Information ]### 
+              atype     = public
+              address   = e8:31:cd:73:f8:e2
+
+RX <--- BTLE|BTLE_CTRL|BTLE_DATA|L2CAP_Hdr|LL_START_ENC_RSP|SM_Hdr|SM_Identity_Address_Information|SM_Identity_Information
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0xb39b0e
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 0
+     NESN      = 0
+     LLID      = control
+     len       = 1
+###[ BTLE_CTRL ]### 
+        opcode    = LL_PAUSE_ENC_REQ
+###[ LL_PAUSE_ENC_REQ ]### 
+
+TX ---> BTLE|BTLE_DATA|BTLE_CTRL|LL_PAUSE_ENC_REQ
+aaaaaaaaaaa+Encrypted
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / Raw
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / Raw
+aaaaaaaaaaa+Encrypted
+iv c6ba280668f8d76f
+skd 18186dcc3cd3d9c48d46b98a4d19e534
+sk c27bbfe89609c4dbc7399d3f84a3cd89
+ltk f6bf269e2449103e170ae519b3c94538
+raw_pkt 36
+dec_pkt 0b
+--------decrypted packet---------
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0x0
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 1
+     NESN      = 0
+     LLID      = control
+     len       = 1
+###[ BTLE_CTRL ]### 
+        opcode    = LL_PAUSE_ENC_RSP
+###[ LL_PAUSE_ENC_RSP ]### 
+
+###[ BT4LE ]### 
+  access_addr= 0x953853c
+  crc       = 0x0
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 1
+     NESN      = 0
+     LLID      = control
+     len       = 1
+###[ BTLE_CTRL ]### 
+        opcode    = LL_PAUSE_ENC_RSP
+###[ LL_PAUSE_ENC_RSP ]### 
+
+0b
+RX <--- BTLE|BTLE_CTRL|BTLE_DATA|LL_PAUSE_ENC_RSP
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  c1:53:25:5f:54:7c
+Advertiser Address:  e8:31:cd:73:f8:e2
+BTLE_ADV_IND          PDU_type=0  
+BTLE_ADV_DIRECT_IND   PDU_type=1  
+BTLE_ADV_NONCONN_IND  PDU_type=2  
+BTLE_SCAN_REQ         PDU_type=3  
+BTLE_SCAN_RSP         PDU_type=4  
+BTLE_CONNECT_REQ      PDU_type=5  
+BTLE_ADV_SCAN_IND     PDU_type=6  
+LL_CONNECTION_UPDATE_IND  opcode=0    
+LL_CHANNEL_MAP_IND    opcode=1    
+LL_TERMINATE_IND      opcode=2    
+LL_ENC_REQ            opcode=3    
+LL_ENC_RSP            opcode=4    
+LL_START_ENC_REQ      opcode=5    
+LL_START_ENC_RSP      opcode=6    
+LL_UNKNOWN_RSP        opcode=7    
+LL_FEATURE_REQ        opcode=8    
+LL_FEATURE_RSP        opcode=9    
+LL_PAUSE_ENC_REQ      opcode=10   
+LL_PAUSE_ENC_RSP      opcode=11   
+LL_VERSION_IND        opcode=12   
+LL_REJECT_IND         opcode=13   
+LL_SLAVE_FEATURE_REQ  opcode=14   
+LL_CONNECTION_PARAM_REQ  opcode=15   
+LL_CONNECTION_PARAM_RSP  opcode=16   
+LL_REJECT_EXT_IND     opcode=17   
+LL_PING_REQ           opcode=18   
+LL_PING_RSP           opcode=19   
+LL_LENGTH_REQ         opcode=20   
+LL_LENGTH_RSP         opcode=21   
+LL_PHY_REQ            opcode=22   
+LL_PHY_RSP            opcode=23   
+LL_PHY_UPDATE_IND     opcode=24   
+LL_MIN_USED_CHANNELS_IND  opcode=25   
+LL_20                 opcode=32   
+ATT_Error_Response    opcode=1    
+ATT_Exchange_MTU_Request  opcode=2    
+ATT_Exchange_MTU_Response  opcode=3    
+ATT_Find_Information_Request  opcode=4    
+ATT_Find_Information_Response  opcode=5    
+ATT_Find_By_Type_Value_Request  opcode=6    
+ATT_Find_By_Type_Value_Response  opcode=7    
+ATT_Read_By_Type_Request_128bit  opcode=8    
+ATT_Read_By_Type_Request  opcode=8    
+ATT_Read_By_Type_Response  opcode=9    
+ATT_Read_Request      opcode=10   
+ATT_Read_Response     opcode=11   
+ATT_Read_Blob_Request  opcode=12   
+ATT_Read_Blob_Response  opcode=13   
+ATT_Read_Multiple_Request  opcode=14   
+ATT_Read_Multiple_Response  opcode=15   
+ATT_Read_By_Group_Type_Request  opcode=16   
+ATT_Read_By_Group_Type_Response  opcode=17   
+ATT_Write_Request     opcode=18   
+ATT_Write_Response    opcode=19   
+ATT_Prepare_Write_Request  opcode=22   
+ATT_Prepare_Write_Response  opcode=23   
+ATT_Execute_Write_Request  opcode=24   
+ATT_Execute_Write_Response  opcode=25   
+ATT_Read_Multiple_Variable_Request  opcode=32   
+ATT_Read_Multiple_Variable_Response  opcode=33   
+ATT_Write_Command     opcode=82   
+ATT_Handle_Value_Notification  opcode=27   
+ATT_Handle_Value_Indication  opcode=29   
+ATT_Handle_Value_Confirmation  opcode=30   
+ATT_Multiple_Handle_Value_Notification  opcode=35   
+ATT_Signed_Write_Command  opcode=210  
+L2CAP_CmdRej          code=1      
+L2CAP_ConnReq         code=2      
+L2CAP_ConnResp        code=3      
+L2CAP_ConfReq         code=4      
+L2CAP_ConfResp        code=5      
+L2CAP_DisconnReq      code=6      
+L2CAP_DisconnResp     code=7      
+L2CAP_EchoReq         code=8      
+L2CAP_EchoResp        code=9      
+L2CAP_InfoReq         code=10     
+L2CAP_InfoResp        code=11     
+L2CAP_Create_Channel_Request  code=12     
+L2CAP_Create_Channel_Response  code=13     
+L2CAP_Move_Channel_Request  code=14     
+L2CAP_Move_Channel_Response  code=15     
+L2CAP_Move_Channel_Confirmation_Request  code=16     
+L2CAP_Move_Channel_Confirmation_Response  code=17     
+L2CAP_Connection_Parameter_Update_Request  code=18     
+L2CAP_Connection_Parameter_Update_Response  code=19     
+L2CAP_LE_Credit_Based_Connection_Request  code=20     
+L2CAP_LE_Credit_Based_Connection_Response  code=21     
+L2CAP_LE_Flow_Control_Credit_IND  code=22     
+L2CAP_Credit_Based_Connection_Request  code=23     
+L2CAP_Credit_Based_Connection_Response  code=24     
+L2CAP_Credit_Based_Reconfigure_Request  code=25     
+L2CAP_Credit_Based_Reconfigure_Response  code=26     
+SM_Pairing_Request    sm_command=1
+SM_Pairing_Response   sm_command=2
+SM_Confirm            sm_command=3
+SM_Random             sm_command=4
+SM_Failed             sm_command=5
+SM_Encryption_Information  sm_command=6
+SM_Master_Identification  sm_command=7
+SM_Identity_Information  sm_command=8
+SM_Identity_Address_Information  sm_command=9
+SM_Signing_Information  sm_command=10
+SM_Security_Request   sm_command=11
+SM_Public_Key         sm_command=12
+SM_DHKey_Check        sm_command=13
+SM_Keypress_Notification  sm_command=14
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE|BTLE_DATA|BTLE_CTRL|LL_FEATURE_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+###[ BT4LE ]### 
+  access_addr= 0x817ebe0b
+  crc       = 0x40ef2
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 0
+     NESN      = 1
+     LLID      = control
+     len       = 9
+###[ BTLE_CTRL ]### 
+        opcode    = LL_FEATURE_RSP
+###[ LL_FEATURE_RSP ]### 
+           feature_set= le_encryption+conn_par_req_proc+ext_reject_ind+slave_init_feat_exch+le_ping+le_data_len_ext+ll_privacy+ext_scan_filter
+
+09ff00000000000000
+RX <--- BTLE|BTLE_CTRL|BTLE_DATA|LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+###[ BT4LE ]### 
+  access_addr= 0x817ebe0b
+  crc       = 0xb3ee05
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 0
+     NESN      = 0
+     LLID      = control
+     len       = 1
+###[ BTLE_CTRL ]### 
+        opcode    = LL_START_ENC_RSP
+###[ LL_START_ENC_RSP ]### 
+
+TX ---> BTLE|BTLE_DATA|BTLE_CTRL|LL_START_ENC_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_START_ENC_RSP
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / Raw
+aaaaaaaaaaa+Encrypted
+iv c6ba280668f8d76f
+skd 18186dcc3cd3d9c48d46b98a4d19e534
+sk c27bbfe89609c4dbc7399d3f84a3cd89
+ltk 00000000000000000000000000000000
+raw_pkt c7
+dec_pkt 06
+--------decrypted packet---------
+###[ BT4LE ]### 
+  access_addr= 0x817ebe0b
+  crc       = 0x0
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 0
+     NESN      = 1
+     LLID      = control
+     len       = 1
+###[ BTLE_CTRL ]### 
+        opcode    = LL_START_ENC_RSP
+###[ LL_START_ENC_RSP ]### 
+
+###[ BT4LE ]### 
+  access_addr= 0x817ebe0b
+  crc       = 0x0
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 0
+     NESN      = 1
+     LLID      = control
+     len       = 1
+###[ BTLE_CTRL ]### 
+        opcode    = LL_START_ENC_RSP
+###[ LL_START_ENC_RSP ]### 
+
+06
+RX <--- BTLE|BTLE_CTRL|BTLE_DATA|LL_START_ENC_RSP
+###[ BT4LE ]### 
+  access_addr= 0x817ebe0b
+  crc       = 0xb39b0e
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 0
+     NESN      = 0
+     LLID      = control
+     len       = 1
+###[ BTLE_CTRL ]### 
+        opcode    = LL_PAUSE_ENC_REQ
+###[ LL_PAUSE_ENC_REQ ]### 
+
+TX ---> BTLE|BTLE_DATA|BTLE_CTRL|LL_PAUSE_ENC_REQ
+aaaaaaaaaaa+Encrypted
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / Raw
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / Raw
+aaaaaaaaaaa+Encrypted
+iv c6ba280668f8d76f
+skd 18186dcc3cd3d9c48d46b98a4d19e534
+sk c27bbfe89609c4dbc7399d3f84a3cd89
+ltk 00000000000000000000000000000000
+raw_pkt f8
+dec_pkt 0b
+--------decrypted packet---------
+###[ BT4LE ]### 
+  access_addr= 0x817ebe0b
+  crc       = 0x0
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 0
+     NESN      = 1
+     LLID      = control
+     len       = 1
+###[ BTLE_CTRL ]### 
+        opcode    = LL_PAUSE_ENC_RSP
+###[ LL_PAUSE_ENC_RSP ]### 
+
+###[ BT4LE ]### 
+  access_addr= 0x817ebe0b
+  crc       = 0x0
+###[ BTLE data header ]### 
+     RFU       = 0
+     MD        = 0
+     SN        = 0
+     NESN      = 1
+     LLID      = control
+     len       = 1
+###[ BTLE_CTRL ]### 
+        opcode    = LL_PAUSE_ENC_RSP
+###[ LL_PAUSE_ENC_RSP ]### 
+
+0b
+RX <--- BTLE|BTLE_CTRL|BTLE_DATA|LL_PAUSE_ENC_RSP
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------

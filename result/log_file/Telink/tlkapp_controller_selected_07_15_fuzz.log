@@ -1,0 +1,19 @@
+2024-07-25 10:33:25,576 - INFO - Bluetooth_SUL.py:69 - Advertiser Address: D8:5F:77:DB:68:C5
+2024-07-25 10:33:25,621 - INFO - Bluetooth_SUL.py:183 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-07-25 10:33:25,831 - INFO - Bluetooth_SUL.py:183 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-07-25 10:33:26,052 - INFO - Bluetooth_SUL.py:183 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-07-25 10:33:26,644 - INFO - Bluetooth_SUL.py:183 - TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+2024-07-25 10:33:26,951 - INFO - Bluetooth_SUL.py:183 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+2024-07-25 10:33:27,111 - INFO - Bluetooth_SUL.py:183 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+2024-07-25 10:33:27,311 - INFO - Bluetooth_SUL.py:183 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+2024-07-25 10:33:27,471 - INFO - Bluetooth_SUL.py:183 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+2024-07-25 10:33:27,671 - INFO - Bluetooth_SUL.py:183 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+2024-07-25 10:33:27,831 - INFO - Bluetooth_SUL.py:183 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+2024-07-25 10:33:27,990 - INFO - Bluetooth_SUL.py:183 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+2024-07-25 10:33:28,211 - INFO - Bluetooth_SUL.py:183 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Request
+2024-07-25 10:33:28,391 - INFO - Bluetooth_SUL.py:183 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Response
+2024-07-25 10:33:28,591 - INFO - Bluetooth_SUL.py:183 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Request
+2024-07-25 10:33:28,771 - INFO - Bluetooth_SUL.py:183 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Response
+2024-07-25 10:33:28,971 - INFO - Bluetooth_SUL.py:183 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Request
+2024-07-25 10:33:29,131 - INFO - Bluetooth_SUL.py:183 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Response
+2024-07-25 10:33:29,331 - INFO - Bluetooth_SUL.py:183 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Request

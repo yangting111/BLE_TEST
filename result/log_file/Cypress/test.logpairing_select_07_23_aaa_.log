@@ -1,0 +1,275 @@
+2024-08-18 20:21:32,232 - INFO - Bluetooth_SUL.py:77 - Advertiser Address: 00:A0:50:00:00:1D
+2024-08-18 20:21:32,233 - DEBUG - key.py:61 - ia: 1c21f75f7926 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:21:32,304 - DEBUG - key.py:61 - ia: 9fbeb0c4f090 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:21:32,342 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:21:33,821 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:21:33,996 - DEBUG - key.py:61 - ia: d0cc297626 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:21:34,043 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:21:35,296 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:21:35,457 - DEBUG - key.py:61 - ia: e9cea99075 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:21:35,504 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:21:36,790 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:21:36,945 - DEBUG - key.py:61 - ia: 15cd63cd0f87 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:21:36,992 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:21:38,271 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:21:38,426 - DEBUG - key.py:61 - ia: 300424bde4f2 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:21:38,474 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:21:43,412 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:21:44,585 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:21:44,745 - DEBUG - key.py:61 - ia: 1922c119223b ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:21:44,793 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:21:46,004 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:21:46,172 - DEBUG - key.py:61 - ia: 4a5cba38de27 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:21:46,211 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:21:48,049 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:21:48,205 - DEBUG - key.py:61 - ia: 8c8693a1f72a ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:21:48,252 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:21:49,503 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:21:49,656 - DEBUG - key.py:61 - ia: 6a30de1610c9 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:21:49,703 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:21:50,947 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:21:51,103 - DEBUG - key.py:61 - ia: 2f35fb4b1489 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:21:51,153 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:21:52,330 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:21:52,485 - DEBUG - key.py:61 - ia: 9ac651983f4e ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:21:52,533 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:21:53,802 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:21:53,963 - DEBUG - key.py:61 - ia: 1b21ca6b6701 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:21:54,011 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:21:58,574 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:00,091 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:00,252 - DEBUG - key.py:61 - ia: 2ecea76e6f14 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:00,303 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:01,541 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:01,724 - DEBUG - key.py:61 - ia: a6d9c95fbddc ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:01,780 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:03,015 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:03,169 - DEBUG - key.py:61 - ia: 3c3d2a8c4fcc ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:03,225 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:04,475 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:04,636 - DEBUG - key.py:61 - ia: 5c0a9c51d0eb ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:04,683 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:05,943 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:06,105 - DEBUG - key.py:61 - ia: e907a5056318 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:06,153 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:07,426 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:07,581 - DEBUG - key.py:61 - ia: 27bd248883bc ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:07,636 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:08,854 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:09,009 - DEBUG - key.py:61 - ia: 8638e1c5cff3 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:09,057 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:10,757 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:10,918 - DEBUG - key.py:61 - ia: 5a0aa4592ab0 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:10,965 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:12,259 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:12,415 - DEBUG - key.py:61 - ia: 3bea9b1eb18d ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:12,470 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:13,762 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:13,917 - DEBUG - key.py:61 - ia: e97b00d38cca ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:13,963 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:15,170 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:15,345 - DEBUG - key.py:61 - ia: 5d9c0fdb3bfc ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:15,393 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:16,620 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:16,794 - DEBUG - key.py:61 - ia: 37fcd68eb90d ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:16,842 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:18,086 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:18,241 - DEBUG - key.py:61 - ia: c7563a1bbc5a ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:18,289 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:19,557 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:19,712 - DEBUG - key.py:61 - ia: db9722caa1cf ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:19,803 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:21,063 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:21,212 - DEBUG - key.py:61 - ia: 828f2ed6d8f2 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:21,251 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:22,507 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:22,662 - DEBUG - key.py:61 - ia: 55aad008a066 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:22,710 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:23,998 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:24,157 - DEBUG - key.py:61 - ia: be32a695dc3c ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:24,194 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:25,948 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:26,125 - DEBUG - key.py:61 - ia: a66603a9ee9d ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:26,179 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:31,382 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:32,474 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:32,627 - DEBUG - key.py:61 - ia: ad3440b34767 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:32,665 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:34,022 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:34,177 - DEBUG - key.py:61 - ia: 3a77d072a8 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:34,228 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:35,503 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:35,659 - DEBUG - key.py:61 - ia: f1fbf502751b ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:35,707 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:40,930 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:42,055 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:42,216 - DEBUG - key.py:61 - ia: 4106e4a9862f ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:42,269 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:44,004 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:44,159 - DEBUG - key.py:61 - ia: 3f467a4438f6 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:44,206 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:45,465 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:45,639 - DEBUG - key.py:61 - ia: 6410f641dda3 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:45,690 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:46,950 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:47,108 - DEBUG - key.py:61 - ia: ade323a9d574 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:47,156 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:52,292 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:53,455 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:53,611 - DEBUG - key.py:61 - ia: 1c27075fba62 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:53,658 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:54,896 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:55,052 - DEBUG - key.py:61 - ia: 8ce8cb5a988c ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:55,099 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:56,349 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:56,505 - DEBUG - key.py:61 - ia: a32f7165472e ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:56,553 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:57,815 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:57,971 - DEBUG - key.py:61 - ia: 658822492233 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:58,019 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:22:59,323 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:22:59,478 - DEBUG - key.py:61 - ia: 608e3bb8507e ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:22:59,526 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:00,789 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:00,950 - DEBUG - key.py:61 - ia: b2199b46a00b ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:00,997 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:02,259 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:02,412 - DEBUG - key.py:61 - ia: 97a637e16394 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:02,450 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:07,376 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:08,507 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:08,662 - DEBUG - key.py:61 - ia: 7ba5f85bf444 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:08,710 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:10,039 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:10,195 - DEBUG - key.py:61 - ia: f922e66581ff ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:10,240 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:15,282 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:16,418 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:16,571 - DEBUG - key.py:61 - ia: c7ef12084cc4 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:16,609 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:21,551 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:22,720 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:22,875 - DEBUG - key.py:61 - ia: 2eb5aec0b319 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:22,922 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:24,151 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:24,306 - DEBUG - key.py:61 - ia: 9691d58432e0 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:24,353 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:25,656 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:25,811 - DEBUG - key.py:61 - ia: 57a6a7bf717a ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:25,858 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:27,045 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:27,203 - DEBUG - key.py:61 - ia: f0fdab893611 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:27,253 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:28,514 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:28,670 - DEBUG - key.py:61 - ia: 805a9d8651 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:28,717 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:30,465 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:30,639 - DEBUG - key.py:61 - ia: 7499a48ebec1 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:30,685 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:31,916 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:32,097 - DEBUG - key.py:61 - ia: 5f89abc0d968 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:32,145 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:33,430 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:33,605 - DEBUG - key.py:61 - ia: 9b96764fae58 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:33,706 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:38,465 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:39,616 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:39,771 - DEBUG - key.py:61 - ia: 66401ee95297 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:39,815 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:41,114 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:41,267 - DEBUG - key.py:61 - ia: 3d6fd55db733 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:41,315 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:42,586 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:42,741 - DEBUG - key.py:61 - ia: d662a107b8 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:42,789 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:47,625 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:48,766 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:48,922 - DEBUG - key.py:61 - ia: ac572a7341b3 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:48,983 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:53,989 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:55,146 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:55,301 - DEBUG - key.py:61 - ia: e4484f46330c ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:55,348 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:56,620 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:56,799 - DEBUG - key.py:61 - ia: 1cb55518c652 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:56,839 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:58,039 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:58,214 - DEBUG - key.py:61 - ia: b3051467383d ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:58,262 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:23:59,486 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:23:59,646 - DEBUG - key.py:61 - ia: f7400b11ec02 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:23:59,693 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:00,975 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:01,130 - DEBUG - key.py:61 - ia: f55fb19c0a32 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:01,176 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:02,440 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:02,621 - DEBUG - key.py:61 - ia: 2d0b1cc047e8 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:02,670 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:03,953 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:04,126 - DEBUG - key.py:61 - ia: e9fd3e2a10b0 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:04,164 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:05,430 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:05,591 - DEBUG - key.py:61 - ia: cff44a7b9b8f ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:05,639 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:06,912 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:07,088 - DEBUG - key.py:61 - ia: e2aafb71e9ae ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:07,135 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:08,506 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:08,681 - DEBUG - key.py:61 - ia: ce423878b70a ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:08,729 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:10,420 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:10,595 - DEBUG - key.py:61 - ia: d9b82844bc ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:10,642 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:11,846 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:12,021 - DEBUG - key.py:61 - ia: cb6c4f79ef1a ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:12,070 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:16,878 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:17,992 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:18,158 - DEBUG - key.py:61 - ia: e106f67a6396 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:18,204 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:19,456 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:19,622 - DEBUG - key.py:61 - ia: 70ffacd11f07 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:19,670 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:20,892 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:21,045 - DEBUG - key.py:61 - ia: 79c7a3161293 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:21,093 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:22,390 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:22,551 - DEBUG - key.py:61 - ia: 180a99cbae ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:22,593 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:27,525 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:28,733 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:28,889 - DEBUG - key.py:61 - ia: f10710dca1 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:28,947 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:30,137 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:30,312 - DEBUG - key.py:61 - ia: 9150127f5a7c ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:30,359 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:31,612 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:31,774 - DEBUG - key.py:61 - ia: 22805001e9da ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:31,824 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:32,987 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:33,143 - DEBUG - key.py:61 - ia: 914008c0ed45 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:33,191 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:34,407 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:34,562 - DEBUG - key.py:61 - ia: 251f116d5af5 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:34,610 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:35,815 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:35,976 - DEBUG - key.py:61 - ia: 2022e253c3f7 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:36,023 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:37,314 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:37,475 - DEBUG - key.py:61 - ia: 2b30b0c0588d ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:37,523 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:38,693 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:38,848 - DEBUG - key.py:61 - ia: 15cd1acf04c7 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:38,904 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:40,132 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:40,295 - DEBUG - key.py:61 - ia: 8fda353eebd9 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:40,351 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:41,580 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:41,736 - DEBUG - key.py:61 - ia: ff775342c2 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:41,778 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:43,147 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:43,309 - DEBUG - key.py:61 - ia: 9409d4199e22 ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:43,356 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-08-18 20:24:44,645 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+2024-08-18 20:24:44,821 - DEBUG - key.py:61 - ia: af19789175af ia_type: 01 ra: 00a05000001d ra_type: 00 role: 1
+2024-08-18 20:24:44,868 - INFO - Bluetooth_SUL.py:211 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ

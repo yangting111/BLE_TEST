@@ -1,0 +1,7 @@
+2024-07-08 15:56:47,635 - INFO - Bluetooth_SUL.py:60 - Advertiser Address: 00:A0:50:00:00:1D
+2024-07-08 15:56:51,418 - INFO - Bluetooth_SUL.py:146 - RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Pairing_Response
+2024-07-08 15:56:51,419 - INFO - Bluetooth_SUL.py:147 - None
+2024-07-08 15:56:51,578 - INFO - Bluetooth_SUL.py:146 - RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Confirm
+2024-07-08 15:56:51,578 - INFO - Bluetooth_SUL.py:147 - None
+2024-07-08 15:56:51,737 - INFO - Bluetooth_SUL.py:146 - RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Failed
+2024-07-08 15:56:51,738 - INFO - Bluetooth_SUL.py:147 - None

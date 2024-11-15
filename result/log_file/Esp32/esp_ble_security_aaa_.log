@@ -1,0 +1,3 @@
+2024-08-10 17:28:45,744 - DEBUG - key.py:60 - ia: 66d5fda41343 ia_type: 01 ra: e831cd73f8e2 ra_type: 00 role: 1
+2024-08-10 17:28:45,783 - INFO - Bluetooth_SUL.py:73 - Advertiser Address: e8:31:cd:73:f8:e2
+2024-08-10 17:28:45,785 - INFO - Bluetooth_SUL.py:184 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ

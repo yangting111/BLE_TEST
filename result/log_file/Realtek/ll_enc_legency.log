@@ -1,0 +1,149 @@
+------------------------------
+test_layer:test_all_pkts
+------------------------------
+Advertiser Address:  00:E0:12:34:56:78
+config_file:  /home/yangting/Documents/Ble_Test/srcs/Config_File/Realtek/peripheral_07_30.ini
+['ll_base', 'sm_legency', 'll_enc_req_pkt', 'll_enc_rsp_pkt', 'll_start_enc_req_pkt', 'll_start_enc_rsp_pkt', 'll_pause_enc_req_pkt', 'll_pause_enc_rsp_pkt']
+-----------------Pre Start-----------------
+Master Address:  f9:c2:15:5a:22:45
+Advertiser Address:  00:E0:12:34:56:78
+BTLE_ADV_IND          PDU_type=0  
+BTLE_ADV_DIRECT_IND   PDU_type=1  
+BTLE_ADV_NONCONN_IND  PDU_type=2  
+BTLE_SCAN_REQ         PDU_type=3  
+BTLE_SCAN_RSP         PDU_type=4  
+BTLE_CONNECT_REQ      PDU_type=5  
+BTLE_ADV_SCAN_IND     PDU_type=6  
+LL_CONNECTION_UPDATE_IND  opcode=0    
+LL_CHANNEL_MAP_IND    opcode=1    
+LL_TERMINATE_IND      opcode=2    
+LL_ENC_REQ            opcode=3    
+LL_ENC_RSP            opcode=4    
+LL_START_ENC_REQ      opcode=5    
+LL_START_ENC_RSP      opcode=6    
+LL_UNKNOWN_RSP        opcode=7    
+LL_FEATURE_REQ        opcode=8    
+LL_FEATURE_RSP        opcode=9    
+LL_PAUSE_ENC_REQ      opcode=10   
+LL_PAUSE_ENC_RSP      opcode=11   
+LL_VERSION_IND        opcode=12   
+LL_REJECT_IND         opcode=13   
+LL_SLAVE_FEATURE_REQ  opcode=14   
+LL_CONNECTION_PARAM_REQ  opcode=15   
+LL_CONNECTION_PARAM_RSP  opcode=16   
+LL_REJECT_EXT_IND     opcode=17   
+LL_PING_REQ           opcode=18   
+LL_PING_RSP           opcode=19   
+LL_LENGTH_REQ         opcode=20   
+LL_LENGTH_RSP         opcode=21   
+LL_PHY_REQ            opcode=22   
+LL_PHY_RSP            opcode=23   
+LL_PHY_UPDATE_IND     opcode=24   
+LL_MIN_USED_CHANNELS_IND  opcode=25   
+LL_20                 opcode=32   
+ATT_Error_Response    opcode=1    
+ATT_Exchange_MTU_Request  opcode=2    
+ATT_Exchange_MTU_Response  opcode=3    
+ATT_Find_Information_Request  opcode=4    
+ATT_Find_Information_Response  opcode=5    
+ATT_Find_By_Type_Value_Request  opcode=6    
+ATT_Find_By_Type_Value_Response  opcode=7    
+ATT_Read_By_Type_Request_128bit  opcode=8    
+ATT_Read_By_Type_Request  opcode=8    
+ATT_Read_By_Type_Response  opcode=9    
+ATT_Read_Request      opcode=10   
+ATT_Read_Response     opcode=11   
+ATT_Read_Blob_Request  opcode=12   
+ATT_Read_Blob_Response  opcode=13   
+ATT_Read_Multiple_Request  opcode=14   
+ATT_Read_Multiple_Response  opcode=15   
+ATT_Read_By_Group_Type_Request  opcode=16   
+ATT_Read_By_Group_Type_Response  opcode=17   
+ATT_Write_Request     opcode=18   
+ATT_Write_Response    opcode=19   
+ATT_Prepare_Write_Request  opcode=22   
+ATT_Prepare_Write_Response  opcode=23   
+ATT_Execute_Write_Request  opcode=24   
+ATT_Execute_Write_Response  opcode=25   
+ATT_Read_Multiple_Variable_Request  opcode=32   
+ATT_Read_Multiple_Variable_Response  opcode=33   
+ATT_Write_Command     opcode=82   
+ATT_Handle_Value_Notification  opcode=27   
+ATT_Handle_Value_Indication  opcode=29   
+ATT_Handle_Value_Confirmation  opcode=30   
+ATT_Multiple_Handle_Value_Notification  opcode=35   
+ATT_Signed_Write_Command  opcode=210  
+L2CAP_CmdRej          code=1      
+L2CAP_ConnReq         code=2      
+L2CAP_ConnResp        code=3      
+L2CAP_ConfReq         code=4      
+L2CAP_ConfResp        code=5      
+L2CAP_DisconnReq      code=6      
+L2CAP_DisconnResp     code=7      
+L2CAP_EchoReq         code=8      
+L2CAP_EchoResp        code=9      
+L2CAP_InfoReq         code=10     
+L2CAP_InfoResp        code=11     
+L2CAP_Create_Channel_Request  code=12     
+L2CAP_Create_Channel_Response  code=13     
+L2CAP_Move_Channel_Request  code=14     
+L2CAP_Move_Channel_Response  code=15     
+L2CAP_Move_Channel_Confirmation_Request  code=16     
+L2CAP_Move_Channel_Confirmation_Response  code=17     
+L2CAP_Connection_Parameter_Update_Request  code=18     
+L2CAP_Connection_Parameter_Update_Response  code=19     
+L2CAP_LE_Credit_Based_Connection_Request  code=20     
+L2CAP_LE_Credit_Based_Connection_Response  code=21     
+L2CAP_LE_Flow_Control_Credit_IND  code=22     
+L2CAP_Credit_Based_Connection_Request  code=23     
+L2CAP_Credit_Based_Connection_Response  code=24     
+L2CAP_Credit_Based_Reconfigure_Request  code=25     
+L2CAP_Credit_Based_Reconfigure_Response  code=26     
+SM_Pairing_Request    sm_command=1
+SM_Pairing_Response   sm_command=2
+SM_Confirm            sm_command=3
+SM_Random             sm_command=4
+SM_Failed             sm_command=5
+SM_Encryption_Information  sm_command=6
+SM_Master_Identification  sm_command=7
+SM_Identity_Information  sm_command=8
+SM_Identity_Address_Information  sm_command=9
+SM_Signing_Information  sm_command=10
+SM_Security_Request   sm_command=11
+SM_Public_Key         sm_command=12
+SM_DHKey_Check        sm_command=13
+SM_Keypress_Notification  sm_command=14
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_SLAVE_FEATURE_REQ
+Traceback (most recent call last):
+  File "/home/yangting/Documents/Ble_Test/srcs/ble_learning.py", line 107, in <module>
+    learned_model = run_KV(alphabet, ble_sul, eq_oracle, automaton_type='mealy', logger_handle=logger_handle, max_learning_rounds=500,cache_and_non_det_check=False,print_level=3)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yangting/Documents/Ble_Test/libs/aalpy/learning_algs/deterministic/KV.py", line 100, in run_KV
+    initial_state.output_fun[a] = sul.query((a,))[-1]
+                                  ^^^^^^^^^^^^^^^
+  File "/home/yangting/Documents/Ble_Test/../Ble_Test/srcs/State_Machine/Bluetooth_SUL.py", line 500, in query
+    self.pre()
+  File "/home/yangting/Documents/Ble_Test/../Ble_Test/srcs/State_Machine/Bluetooth_SUL.py", line 320, in pre
+    output = self.connection_packet_send_received(self.packet_construction.get_pkt('connect_req'), connect_min_attempts=constant.CONNECT_MIN_ATTEMPTS, connect_max_attempts=constant.CONNECT_MAX_ATTEMPTS)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yangting/Documents/Ble_Test/../Ble_Test/srcs/State_Machine/Bluetooth_SUL.py", line 285, in connection_packet_send_received
+    data = self.driver.raw_receive()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yangting/Documents/Ble_Test/../Ble_Test/driver/NRF52_dongle.py", line 102, in raw_receive
+    c = self.serial.read(1)
+        ^^^^^^^^^^^^^^^^^^^
+  File "/home/yangting/miniconda3/envs/python3.11/lib/python3.11/site-packages/serial/serialposix.py", line 565, in read
+    ready, _, _ = select.select([self.fd, self.pipe_abort_read_r], [], [], timeout.time_left())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

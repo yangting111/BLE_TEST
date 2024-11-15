@@ -1,0 +1,2 @@
+2024-07-10 11:05:51,555 - INFO - Bluetooth_SUL.py:61 - Advertiser Address: 00:A0:50:00:00:1D
+2024-07-10 11:05:55,300 - INFO - Bluetooth_SUL.py:129 - Input words: BTLE / BTLE_DATA / L2CAP_Hdr / L2CAP_CmdHdr / L2CAP_ConfResp 

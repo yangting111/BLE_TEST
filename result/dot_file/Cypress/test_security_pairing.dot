@@ -1,0 +1,8 @@
+digraph test_security_pairing {
+s0 [label="start"];
+s1 [label="end"]
+s0 -> s0  [label="security_request_pkt/empty"];
+s0 -> s1  [label="security_request_pkt/empty"];
+__start0 [label="", shape=none];
+__start0 -> s0  [label=""];
+}

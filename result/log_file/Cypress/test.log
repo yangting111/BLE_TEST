@@ -1,0 +1,17 @@
+2024-11-06 21:01:00,240 - INFO - Bluetooth_SUL.py:74 - Advertiser Address: 00:A0:50:00:00:02
+2024-11-06 21:01:00,240 - DEBUG - key.py:71 - ia: 706dfa21b010 ia_type: 01 ra: 00a050000002 ra_type: 00 role: 1
+2024-11-06 21:01:00,252 - DEBUG - ble_learning.py:94 - alphabet: ['ll_enc_req_pkt', 'll_enc_rsp_pkt', 'll_start_enc_req_pkt', 'll_start_enc_rsp_pkt', 'll_pause_enc_req_pkt', 'll_pause_enc_rsp_pkt']
+2024-11-06 21:01:00,252 - INFO - Bluetooth_SUL.py:221 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-11-06 21:01:01,113 - INFO - Bluetooth_SUL.py:221 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-11-06 21:01:01,892 - INFO - Bluetooth_SUL.py:221 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+2024-11-06 21:01:02,292 - INFO - Bluetooth_SUL.py:221 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+2024-11-06 21:01:02,692 - INFO - Bluetooth_SUL.py:221 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+2024-11-06 21:01:03,692 - INFO - Bluetooth_SUL.py:221 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+2024-11-06 21:01:04,093 - DEBUG - key.py:168 - preq: 0103002d100f0f
+2024-11-06 21:01:04,093 - INFO - Bluetooth_SUL.py:221 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Pairing_Request
+2024-11-06 21:01:04,512 - DEBUG - key.py:161 - prsp: 02030001100707
+2024-11-06 21:01:04,514 - DEBUG - key.py:213 - confirm: bdc74a0a635ff41ce7e0eb23ee6088fc
+2024-11-06 21:01:04,514 - DEBUG - Bluetooth_SUL.py:172 - packet_send
+2024-11-06 21:01:04,514 - INFO - Bluetooth_SUL.py:221 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Confirm
+2024-11-06 21:01:04,934 - DEBUG - Bluetooth_SUL.py:172 - packet_send
+2024-11-06 21:01:04,934 - INFO - Bluetooth_SUL.py:221 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Random

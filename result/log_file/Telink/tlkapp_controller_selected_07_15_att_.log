@@ -1,0 +1,44 @@
+2024-07-22 16:14:16,969 - INFO - Bluetooth_SUL.py:68 - Advertiser Address: D8:5F:77:DB:68:C5
+2024-07-22 16:14:16,970 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-07-22 16:14:17,165 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-07-22 16:14:17,310 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-07-22 16:14:17,453 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-07-22 16:14:17,717 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+2024-07-22 16:14:18,224 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+2024-07-22 16:14:18,504 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+2024-07-22 16:14:18,704 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+2024-07-22 16:14:18,964 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+2024-07-22 16:14:19,224 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+2024-07-22 16:14:19,444 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+2024-07-22 16:14:19,744 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+2024-07-22 16:14:20,044 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Request
+2024-07-22 16:14:20,324 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Response
+2024-07-22 16:14:20,744 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Request
+2024-07-22 16:14:21,204 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Response
+2024-07-22 16:14:21,625 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Request
+2024-07-22 16:14:21,904 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Response
+2024-07-22 16:14:22,225 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Request
+2024-07-22 16:14:22,544 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+2024-07-22 16:14:22,845 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+2024-07-22 16:14:23,125 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+2024-07-22 16:14:23,425 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Response
+2024-07-22 16:14:23,685 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+2024-07-22 16:14:23,925 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+2024-07-22 16:14:24,285 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+2024-07-22 16:14:24,465 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+2024-07-22 16:14:24,785 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+2024-07-22 16:14:25,024 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Response
+2024-07-22 16:14:25,405 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+2024-07-22 16:14:25,665 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+2024-07-22 16:14:26,005 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Request
+2024-07-22 16:14:26,345 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Response
+2024-07-22 16:14:26,665 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+2024-07-22 16:14:26,865 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+2024-07-22 16:14:27,185 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+2024-07-22 16:14:27,484 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Response
+2024-07-22 16:14:27,745 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+2024-07-22 16:14:28,025 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+2024-07-22 16:14:28,325 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+2024-07-22 16:14:28,665 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Response
+2024-07-22 16:14:28,985 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+2024-07-22 16:14:29,205 - INFO - Bluetooth_SUL.py:182 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response

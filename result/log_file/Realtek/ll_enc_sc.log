@@ -1,0 +1,23 @@
+------------------------------
+test_layer:test_all_pkts
+------------------------------
+Traceback (most recent call last):
+  File "/home/yangting/miniconda3/envs/python3.11/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yangting/Documents/Ble_Test/srcs/ble_learning.py", line 60, in <module>
+    ble_sul = Bluetooth_SUL(NRF52Dongle(port_name=port_name,logs_pcap=logs_pcap,pcap_filename=pcap_filename), advertiser_address,iat,rat, role,rx_len,tx_len ,logger_handle, key_path,test_layer, config_file,statepkt_dict=statepkt_dict, return_handle_layer=return_handle_layer,send_handle_layer=send_handle_layer)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yangting/Documents/Ble_Test/../Ble_Test/driver/NRF52_dongle.py", line 57, in __init__
+    self.serial = serial.Serial(self.port_name, self.baudrate, timeout=0.1)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yangting/miniconda3/envs/python3.11/lib/python3.11/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/yangting/miniconda3/envs/python3.11/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM3: [Errno 2] No such file or directory: '/dev/ttyACM3'

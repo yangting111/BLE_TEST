@@ -1,0 +1,980 @@
+------------------------------
+test_layer:att_pkts
+------------------------------
+Advertiser Address:  e8:31:cd:73:f8:e2
+Master Address:  36:a3:23:d7:8d:a5
+['att_error_rsp_pkt', 'att_exchange_mtu_req_pkt', 'att_exchange_mtu_rsp_pkt', 'att_find_information_req_pkt', 'att_find_information_rsp_pkt', 'att_find_by_type_value_req_pkt', 'att_find_by_type_value_rsp_pkt', 'att_read_by_type_req_pkt', 'att_read_by_type_rsp_pkt', 'att_read_req_pkt', 'att_read_rsp_pkt', 'att_read_blob_req_pkt', 'att_read_blob_rsp_pkt', 'att_read_multiple_req_pkt', 'att_read_multiple_rsp_pkt', 'att_read_by_group_type_req_pkt', 'att_read_by_group_type_rsp_pkt', 'att_read_multiple_variable_req_pkt', 'att_read_multiple_variable_rsp_pkt', 'att_write_req_pkt', 'att_write_rsp_pkt', 'att_write_cmd_pkt', 'att_signed_write_pkt', 'att_prepare_write_req_pkt', 'att_prepare_write_rsp_pkt', 'att_execute_write_req_pkt', 'att_execute_write_rsp_pkt', 'att_handle_value_notification_pkt', 'att_handle_value_indication_pkt', 'att_handle_value_confirmation_pkt', 'att_multiple_handle_value_notification_pkt']
+-----------------Pre Start-----------------
+Master Address:  ad:06:40:07:e7:eb
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  f3:5f:2f:7b:fc:ae
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Exchange_MTU_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Exchange_MTU_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  9d:8a:70:10:6b:7f
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Exchange_MTU_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  de:fe:25:3c:62:58
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  29:7a:49:1d:0d:e6
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  45:51:20:bc:20:a6
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_By_Type_Value_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  f8:03:00:68:38:63
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_By_Type_Value_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  20:12:60:88:4a:33
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  80:c4:7a:a7:cb:4e
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  6c:45:72:ed:81:a0
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  8e:67:09:40:28:e8
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  1e:36:71:aa:6b:57
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Blob_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  ee:d7:1e:ce:28:1e
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Blob_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  71:40:a0:af:61:8b
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Multiple_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  54:27:5a:ec:3b
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Multiple_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  bb:15:77:76:b0:c5
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  2a:7e:c6:7e:8f:07
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  17:a1:7c:1f:75:2a
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Multiple_Variable_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  ef:02:6b:5a:b5:9e
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Multiple_Variable_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  39:63:0d:1c:0f:3a
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Write_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  ee:06:d6:d3:de:67
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Write_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  55:ac:c5:a3:29:be
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Write_Command
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  89:17:8e:e2:05:80
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Signed_Write_Command
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  1d:81:1d:7c:0d:bf
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Prepare_Write_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  aa:b0:96:87:aa:fd
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Prepare_Write_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  47:eb:d1:38:75:76
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Execute_Write_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  ef:ea:0b:4b:cf:9b
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Execute_Write_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  bd:18:66:b3:fb:a2
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Handle_Value_Notification
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  3d:c4:31:f1:1f:dc
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Handle_Value_Indication
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  8b:14:73:af:2f:42
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Handle_Value_Confirmation
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  7d:5d:64:77:42:8f
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Multiple_Handle_Value_Notification
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+----------------step int find_cex----------------
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  67:c0:6d:b7:e1:5e
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Write_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Write_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Multiple_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Write_Command
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Prepare_Write_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Write_Command
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Handle_Value_Indication
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Write_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Handle_Value_Notification
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_By_Type_Value_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Signed_Write_Command
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Exchange_MTU_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Blob_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Multiple_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  e6:ae:88:3a:94:43
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Handle_Value_Confirmation
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Blob_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Multiple_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Multiple_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Multiple_Variable_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Handle_Value_Confirmation
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Handle_Value_Notification
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Blob_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Handle_Value_Indication
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Exchange_MTU_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Multiple_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Blob_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Multiple_Handle_Value_Notification
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  a6:fe:fc:b9:d6:5e
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Write_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Write_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Exchange_MTU_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Execute_Write_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Handle_Value_Indication
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_By_Type_Value_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Multiple_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Prepare_Write_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Multiple_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Write_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Multiple_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Write_Command
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Multiple_Handle_Value_Notification
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Prepare_Write_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Group_Type_Response
+-----------------Post Start-----------------
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+-----------------Post End-----------------
+-----------------Pre Start-----------------
+Master Address:  68:35:17:25:7c:98
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_TERMINATE_IND
+TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
+TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_RSP
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Security_Request
+TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_RSP
+-----------------Pre End-----------------
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_Information_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_By_Type_Value_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Handle_Value_Notification
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Blob_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Blob_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Exchange_MTU_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Handle_Value_Confirmation
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Multiple_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Handle_Value_Indication
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_By_Type_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Multiple_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Multiple_Handle_Value_Notification
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Multiple_Variable_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_By_Type_Value_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Find_By_Type_Value_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Error_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Write_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Read_Blob_Response
+TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Exchange_MTU_Request
+RX <--- BTLE / BTLE_DATA / L2CAP_Hdr / ATT_Hdr / ATT_Exchange_MTU_Response
+-----------------------------------
+Learning Finished.
+Learning Rounds:  0
+Number of states: 1
+Time (in seconds)
+  Total                : 115.82
+  Learning algorithm   : 84.76
+  Conformance checking : 31.06
+Learning Algorithm
+ # Membership Queries  : 31
+ # MQ Saved by Caching : 0
+ # Steps               : 31
+Equivalence Query
+ # Membership Queries  : 4
+ # Steps               : 80
+-----------------------------------
+Pcap saved
+-----------------------------------
+Non-determinism in learning: 0
+Non-determinism in equivalence check: 0
+-----------------------------------
+Visualization started in the background thread.
+Model saved to /home/yangting/Documents/Ble_Test/result/dot_file/Esp32/esp_ble_security_att.dot.
