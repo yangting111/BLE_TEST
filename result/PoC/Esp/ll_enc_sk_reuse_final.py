@@ -19,13 +19,11 @@ from Ble_Test.driver.NRF52_dongle import NRF52Dongle
 from scapy.compat import raw
 from boofuzz.primitives.bit_field import Bit_Field
 from scapy.volatile import *
-from scapy.contrib.blemesh import *
 from scapy.utils import hexdump
 from scapy.layers.bluetooth4LE import *
 from scapy.layers.inet6 import *
 from scapy.layers.bluetooth import *
 from scapy.fields import *
-from Ble_Test.libs.ble_mesh_decrypter.utils.kdf import *
 from scapy.packet import fuzz
 from scapy.all import *
 from colorama import Fore

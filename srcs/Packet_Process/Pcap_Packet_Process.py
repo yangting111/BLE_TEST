@@ -13,7 +13,7 @@ from scapy.layers.bluetooth4LE import *
 from Ble_Test.libs.ble_decrypter.utils.ll_enc import *
 
 from Ble_Test.libs.ble_decrypter.utils import key
-from scapy.contrib.blemesh import *
+
 # Process original pcap file
 import configparser
 from binascii import hexlify, unhexlify

@@ -19,7 +19,6 @@ from scapy.layers.bluetooth4LE import *
 from scapy.layers.inet6 import *
 from scapy.layers.bluetooth import *
 from scapy.fields import *
-from Ble_Test.libs.ble_mesh_decrypter.utils.kdf import *
 from scapy.packet import fuzz
 from scapy.all import *
 

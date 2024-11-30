@@ -18,13 +18,11 @@ from Ble_Test.packet.read_config import *
 from Ble_Test.driver.NRF52_dongle import NRF52Dongle
 from scapy.compat import raw
 from scapy.volatile import *
-from scapy.contrib.blemesh import *
 from scapy.utils import hexdump
 from scapy.layers.bluetooth4LE import *
 from scapy.layers.inet6 import *
 from scapy.layers.bluetooth import *
 from scapy.fields import *
-from Ble_Test.libs.ble_mesh_decrypter.utils.kdf import *
 from scapy.packet import fuzz
 from scapy.all import *
 from colorama import Fore
@@ -47,7 +45,6 @@ from Ble_Test.srcs.Log_Config.logger_config import *
 
 
 from Ble_Test.srcs.Config_File.Realtek import config
-from Ble_Test.srcs.Packet_Fuzz.Fuzz_Session import Fuzz_Session
 str = config.device["advertiser_address"]
 Layers = {0:"adv_pkts", 1:"ll_pkts", 2:"l2cap_pkts", 3:"smp_pkts", 4:"att_pkts",5:"test_legency_pkts",6:"test_sc_pkts",7:"test_all_pkts"}
 # ll = AutomataSUL_Graph('/home/yangting/Documents/Ble_Test/result/pairing_select_05_28.dot')

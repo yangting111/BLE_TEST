@@ -16,7 +16,7 @@ device = {
     "log_path": "/home/yangting/Documents/Ble_Test/result/log_file/Esp32/test_l2cap1.log",
     "port_name": "/dev/ttyACM0",
     "logs_pcap": True,
-    "pcap_filename": "/home/yangting/Documents/Ble_Test/result/log_file/Esp32/test_smp_legency1.pcap",
+    "pcap_filename": "/home/yangting/Documents/Ble_Test/result/log_file/Esp32/test_smp_legency_access_adress.pcap",
     "return_handle_layer": [1,3] ,
     "send_handle_layer":[1,3], # Uncomment and modify if needed
     "key_path": "/home/yangting/Documents/Ble_Test/result/log_file/Esp32/key.txt",
