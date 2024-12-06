@@ -124,7 +124,6 @@ pkt = ble_sul.get_packet("ll_pause_enc_req_pkt")
 pkt.show2()
 ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
 
-
 sk = ble_sul.packet_construction.ll_enc.sk
 iv = ble_sul.packet_construction.ll_enc.iv
 skd = ble_sul.packet_construction.ll_enc.skd

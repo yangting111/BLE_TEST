@@ -168,13 +168,13 @@ class LL_ENC:
         
     
         aes = AES.new(self.sk, AES.MODE_CCM, nonce=nonce, mac_len=4)  # mac = mic
-        aes.update((header & 0xE3).to_bytes())  # Calculate mic over header cleared of NES, SN and MD
+        aes.update((header & 0xE3).to_bytes(length=1,byteorder="big"))  # Calculate mic over header cleared of NES, SN and MD
         # aes.update((header & 0x03).to_bytes())
         enc_pkt, mic = aes.encrypt_and_digest(raw_pkt[6:-3])  # get payload and exclude 3 bytes of crc
         # enc_pkt, mic = aes.encrypt_and_digest(b'0x06') 
         # print(enc_pkt.hex())
         # print(mic.hex())    
-        enc_raw_pkt = access_address + header.to_bytes() + length.to_bytes() + enc_pkt + mic + crc
+        enc_raw_pkt = access_address + header.to_bytes(length=1,byteorder="big") + length.to_bytes(length=1,byteorder="big") + enc_pkt + mic + crc
 
         self.conn_master_packet_counter += 1
         return enc_raw_pkt
@@ -204,7 +204,7 @@ class LL_ENC:
             self.ltk = b"\x00" * 16
         print("ltk "+self.ltk.hex())
         aes = AES.new(self.sk, AES.MODE_CCM, nonce=nonce, mac_len=4)  # mac = mic
-        aes.update((header & 0xE3).to_bytes())  # Calculate mic over header cleared of NES, SN and MD
+        aes.update((header & 0xE3).to_bytes(length=1,byteorder="big"))  # Calculate mic over header cleared of NES, SN and MD
         print("raw_pkt "+raw_pkt[6:-4 - 3].hex())
         dec_pkt = aes.decrypt(raw_pkt[6:-4 - 3])  # get payload and exclude 3 bytes of crc
         print("dec_pkt "+dec_pkt.hex())
@@ -213,11 +213,11 @@ class LL_ENC:
             mic = raw_pkt[6 + length: -3]  # Get mic from payload and exclude crc
             aes.verify(mic)
             self.conn_slave_packet_counter += 1
-            return access_address + header.to_bytes() + length.to_bytes() + dec_pkt + b'\x00\x00\x00'
+            return access_address + header.to_bytes(length=1,byteorder="big") + length.to_bytes(length=1,byteorder="big") + dec_pkt + b'\x00\x00\x00'
         except:
             print("MIC Wrong")
             self.conn_slave_packet_counter += 1
-            p = access_address + header.to_bytes() + length.to_bytes() + dec_pkt + b'\x00\x00\x00'
+            p = access_address + header.to_bytes(length=1,byteorder="big") + length.to_bytes(length=1,byteorder="big") + dec_pkt + b'\x00\x00\x00'
             # self.machine.report_anomaly(msg='MIC Wrong', pkt=p)
             return None     
 

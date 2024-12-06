@@ -14,7 +14,7 @@ device = {
     "config_file": "/home/yangting/Documents/Ble_Test/srcs/Config_File/Esp32/esp_ble_security.ini",
     "learned_model_path": "/home/yangting/Documents/Ble_Test/result/dot_file/Esp32/esp_ble_security_l2cap.dot",
     "log_path": "/home/yangting/Documents/Ble_Test/result/log_file/Esp32/test_l2cap1.log",
-    "port_name": "/dev/ttyACM0",
+    "port_name": "/dev/ttyACM1",
     "logs_pcap": True,
     "pcap_filename": "/home/yangting/Documents/Ble_Test/result/log_file/Esp32/test_smp_legency_access_adress.pcap",
     "return_handle_layer": [1,3] ,

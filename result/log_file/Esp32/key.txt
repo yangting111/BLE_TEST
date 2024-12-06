@@ -1,8 +1,8 @@
-Master_address: fd:bb:a8:dd:68:a0
+Master_address: 43:6b:9c:dc:8b:e0
 -------------------------------------------
 LL_ENC
 -------------------------------------------
-access_address: 4239535732
+access_address: 592201312
 ltk: 00000000000000000000000000000000
 stk: None
 skdm: 0000000000000000
@@ -11,9 +11,9 @@ skds: 0000000000000000
 ivs: 00000000
 ediv: 0000
 rand: 0000000000000000
-skd: 193e126fe82d380dd54eb04e973d9b01
-iv: 19c550cf1006fa1e
-sk: 62e1c06b2d498c723c36855d048a9470
+skd: 65393501cc17d1c10502e27e97249f36
+iv: 13fdc839ed034c00
+sk: 38817507e73597c61fe3f0d70f38e7f2
 conn_master_packet_counter: 1
 conn_slave_packet_counter: 2
 ll_encryption: True
@@ -28,7 +28,7 @@ tk: 00000000000000000000000000000000
 prsp: None
 preq: None
 ia_type: 01
-ia: fdbba8dd68a0
+ia: 436b9cdc8be0
 ra_type: 00
 ra: e831cd73f8e2
 io_cap: None
@@ -39,8 +39,8 @@ lesc: False
 keypress: None
 ct2: None
 rfu: None
-mrnd: 9752a8d7e766a7358ee4b8f88aed925b
-srnd: 77bc56967e761886d31ea825db938f50
+mrnd: 795cc917592af40c37619065d8cbe947
+srnd: 071047b7c102a1cfbdad5685c958f974
 role: 1
 confirm: None
 mode: P-256

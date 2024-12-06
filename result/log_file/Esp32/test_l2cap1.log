@@ -1,34 +1,34 @@
-2024-12-03 10:19:28,829 - INFO - Bluetooth_SUL.py:58 - Advertiser Address: e8:31:cd:73:f8:e2
-2024-12-03 10:19:28,830 - DEBUG - key.py:71 - ia: e374d921c29a ia_type: 01 ra: e831cd73f8e2 ra_type: 00 role: 1
-2024-12-03 10:19:28,842 - DEBUG - key.py:71 - ia: 353355941fe9 ia_type: 01 ra: e831cd73f8e2 ra_type: 00 role: 1
-2024-12-03 10:19:28,853 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
-2024-12-03 10:19:29,204 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
-2024-12-03 10:19:29,421 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
-2024-12-03 10:19:29,621 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
-2024-12-03 10:19:29,827 - DEBUG - key.py:173 - preq: 0103000d100f0f
-2024-12-03 10:19:29,828 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Pairing_Request
-2024-12-03 10:19:30,021 - DEBUG - key.py:166 - prsp: 02030009100303
-2024-12-03 10:19:30,029 - DEBUG - Bluetooth_SUL.py:158 - packet_send
-2024-12-03 10:19:30,029 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Public_Key
-2024-12-03 10:19:32,068 - DEBUG - Bluetooth_SUL.py:158 - packet_send
-2024-12-03 10:19:32,070 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Random
-2024-12-03 10:19:33,068 - DEBUG - key.py:304 - mackey: 6fc3e1acd7d68a967a4ae28e4b5ba722 ltk: cc30a269fc32b55ad498ffbc8523e381
-2024-12-03 10:19:33,075 - DEBUG - Bluetooth_SUL.py:158 - packet_send
-2024-12-03 10:19:33,076 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_DHKey_Check
-2024-12-03 10:19:33,267 - DEBUG - Bluetooth_SUL.py:158 - packet_send
-2024-12-03 10:19:33,268 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_ENC_REQ
-2024-12-03 10:19:33,468 - DEBUG - Bluetooth_SUL.py:158 - packet_send
-2024-12-03 10:19:33,468 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / Raw
-2024-12-03 10:19:34,493 - DEBUG - Bluetooth_SUL.py:158 - packet_send
-2024-12-03 10:19:34,494 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / Raw
-2024-12-03 10:19:35,686 - DEBUG - key.py:71 - ia: fdbba8dd68a0 ia_type: 01 ra: e831cd73f8e2 ra_type: 00 role: 1
-2024-12-03 10:19:35,702 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
-2024-12-03 10:19:36,222 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
-2024-12-03 10:19:36,744 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
-2024-12-03 10:19:37,300 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
-2024-12-03 10:19:37,497 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
-2024-12-03 10:19:37,717 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
-2024-12-03 10:19:37,942 - DEBUG - Bluetooth_SUL.py:158 - packet_send
-2024-12-03 10:19:37,942 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_START_ENC_RSP
-2024-12-03 10:19:38,144 - DEBUG - Bluetooth_SUL.py:158 - packet_send
-2024-12-03 10:19:38,144 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / Raw
+2024-12-06 11:37:30,468 - INFO - Bluetooth_SUL.py:58 - Advertiser Address: e8:31:cd:73:f8:e2
+2024-12-06 11:37:30,468 - DEBUG - key.py:71 - ia: 5e6600aa225f ia_type: 01 ra: e831cd73f8e2 ra_type: 00 role: 1
+2024-12-06 11:37:30,480 - DEBUG - key.py:71 - ia: e585e96fb14e ia_type: 01 ra: e831cd73f8e2 ra_type: 00 role: 1
+2024-12-06 11:37:30,491 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-12-06 11:37:31,173 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+2024-12-06 11:37:31,410 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+2024-12-06 11:37:31,630 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+2024-12-06 11:37:31,836 - DEBUG - key.py:173 - preq: 0103000d100f0f
+2024-12-06 11:37:31,836 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Pairing_Request
+2024-12-06 11:37:32,031 - DEBUG - key.py:166 - prsp: 02030009100303
+2024-12-06 11:37:32,037 - DEBUG - Bluetooth_SUL.py:158 - packet_send
+2024-12-06 11:37:32,037 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Public_Key
+2024-12-06 11:37:34,116 - DEBUG - Bluetooth_SUL.py:158 - packet_send
+2024-12-06 11:37:34,116 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_Random
+2024-12-06 11:37:35,137 - DEBUG - key.py:304 - mackey: 74665eed9e950683a9025ecf06092819 ltk: 1d9aed277130bd3f9e040d4239aa684a
+2024-12-06 11:37:35,138 - DEBUG - Bluetooth_SUL.py:158 - packet_send
+2024-12-06 11:37:35,138 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / L2CAP_Hdr / SM_Hdr / SM_DHKey_Check
+2024-12-06 11:37:35,356 - DEBUG - Bluetooth_SUL.py:158 - packet_send
+2024-12-06 11:37:35,356 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_ENC_REQ
+2024-12-06 11:37:35,596 - DEBUG - Bluetooth_SUL.py:158 - packet_send
+2024-12-06 11:37:35,597 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / Raw
+2024-12-06 11:37:36,618 - DEBUG - Bluetooth_SUL.py:158 - packet_send
+2024-12-06 11:37:36,618 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / Raw
+2024-12-06 11:37:37,836 - DEBUG - key.py:71 - ia: 436b9cdc8be0 ia_type: 01 ra: e831cd73f8e2 ra_type: 00 role: 1
+2024-12-06 11:37:37,852 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-12-06 11:37:38,440 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-12-06 11:37:39,018 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_ADV / BTLE_SCAN_REQ
+2024-12-06 11:37:39,640 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_FEATURE_REQ
+2024-12-06 11:37:39,858 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_VERSION_IND
+2024-12-06 11:37:40,058 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_LENGTH_REQ
+2024-12-06 11:37:40,262 - DEBUG - Bluetooth_SUL.py:158 - packet_send
+2024-12-06 11:37:40,263 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / LL_START_ENC_RSP
+2024-12-06 11:37:40,465 - DEBUG - Bluetooth_SUL.py:158 - packet_send
+2024-12-06 11:37:40,465 - INFO - Bluetooth_SUL.py:202 - TX ---> BTLE / BTLE_DATA / BTLE_CTRL / Raw
