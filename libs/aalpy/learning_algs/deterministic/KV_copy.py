@@ -9,7 +9,7 @@ from aalpy.base import Oracle, SUL
 from aalpy.utils.HelperFunctions import print_learning_info, visualize_classification_tree
 
 
-from Ble_Test.srcs.Send_Packet import constant
+from Ble_state_check.srcs.Send_Packet import constant
 from .ClassificationTree import ClassificationTree
 from .CounterExampleProcessing import counterexample_successfully_processed
 from ...base.SUL import CacheSUL

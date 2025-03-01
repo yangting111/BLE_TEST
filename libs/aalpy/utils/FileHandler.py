@@ -405,6 +405,7 @@ def load_automaton_from_file(path, automaton_type, compute_prefixes=False):
                 _process_node_label_prime(state_id, label, line, node_label_dict, nodeType, automaton_type)
             # transitions
             elif '->' in line:
+               
                 match = re.match(transition_pattern, line)
                 # source, destination, label
                 label = re.search(label_pattern, match.group(3)).group(1)
@@ -421,7 +422,7 @@ def load_automaton_from_file(path, automaton_type, compute_prefixes=False):
     automaton = aut_type(initial_state, list(node_label_dict.values()))
     if automaton_type not in {'mc', 'vpa'} and not automaton.is_input_complete():
         print('Warning: Loaded automaton is not input complete.')
-    if compute_prefixes and not automaton_type not in {'mc', 'vpa'}:
+    if compute_prefixes and automaton_type not in {'mc', 'vpa'}:
         for state in automaton.states:
             state.prefix = automaton.get_shortest_path(automaton.initial_state, state)
     return automaton

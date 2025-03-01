@@ -4,7 +4,7 @@ import subprocess  # For executing a shell command
 import sys
 import time
 from boofuzz.fuzz_logger_text import FuzzLoggerText
-from Ble_Test.libs.scapy.compat import raw
+from Ble_state_check.libs.scapy.compat import raw
 
 
 mylogger = FuzzLoggerText()

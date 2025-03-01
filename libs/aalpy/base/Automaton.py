@@ -116,6 +116,7 @@ class Automaton(ABC, Generic[AutomatonStateType]):
 
         """
         alphabet = set(self.get_input_alphabet())
+        # print(alphabet)
         for state in self.states:
             if set(state.transitions.keys()) != alphabet:
                 return False

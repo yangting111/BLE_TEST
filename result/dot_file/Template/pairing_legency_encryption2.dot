@@ -1,0 +1,13 @@
+digraph pairing_legency_encryption {
+s0 [label="start"];
+s1 [label="s1"];
+s2 [label="s2"];
+s3 [label="s3"];
+s4 [label="end"];
+s0 -> s1  [label="pairing_request_pkt/BTLE|BTLE_DATA|L2CAP_Hdr|SM_Hdr|SM_Pairing_Response"];
+s1 -> s2  [label="pairing_confirm_pkt/BTLE|BTLE_DATA|L2CAP_Hdr|SM_Confirm|SM_Hdr"];
+s2 -> s3  [label="pairing_random_pkt/BTLE|BTLE_DATA|L2CAP_Hdr|SM_Random|SM_Hdr"];
+s3 -> s4  [label="ll_enc_req_pkt/BTLE|BTLE_CTRL|BTLE_DATA|LL_ENC_RSP|LL_START_ENC_REQ"];
+__start0 [label="", shape=none];
+__start0 -> s0  [label=""];
+}

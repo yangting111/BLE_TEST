@@ -13,9 +13,9 @@ sys.path.insert(0,os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+"/
 
 
 
-from Ble_Test.libs.scapy.libs.six import b
-from Ble_Test.packet.read_config import *
-from Ble_Test.driver.NRF52_dongle import NRF52Dongle
+from Ble_state_check.libs.scapy.libs.six import b
+from Ble_state_check.packet.read_config import *
+from Ble_state_check.driver.NRF52_dongle import NRF52Dongle
 from scapy.compat import raw
 from scapy.volatile import *
 from scapy.utils import hexdump
@@ -26,28 +26,29 @@ from scapy.fields import *
 from scapy.packet import fuzz
 from scapy.all import *
 from colorama import Fore
+import threading
 
 
 
 
-from Ble_Test.srcs.Send_Packet.BLE_LL import BLE_LL
-from Ble_Test.srcs.Send_Packet.BLE_L2CAP import BLE_L2CAP
+from Ble_state_check.srcs.Send_Packet.BLE_LL import BLE_LL
+from Ble_state_check.srcs.Send_Packet.BLE_L2CAP import BLE_L2CAP
 
 from aalpy.utils import load_automaton_from_file
 import networkx as nx
 import matplotlib.pyplot as plt
 
-from Ble_Test.srcs.State_Machine.Bluetooth_SUL import Bluetooth_SUL
-from Ble_Test.libs.boofuzz.blocks import block
-from Ble_Test.libs.boofuzz.primitives import *
+from Ble_state_check.srcs.State_Machine.Bluetooth_SUL import Bluetooth_SUL
+from Ble_state_check.libs.boofuzz.blocks import block
+from Ble_state_check.libs.boofuzz.primitives import *
 
-from Ble_Test.srcs.Log_Config.logger_config import *
+from Ble_state_check.srcs.Log_Config.logger_config import *
 
 
-from Ble_Test.srcs.Config_File.Realtek import config
+from Ble_state_check.srcs.Config_File.Realtek import config
 str = config.device["advertiser_address"]
 Layers = {0:"adv_pkts", 1:"ll_pkts", 2:"l2cap_pkts", 3:"smp_pkts", 4:"att_pkts",5:"test_legency_pkts",6:"test_sc_pkts",7:"test_all_pkts"}
-# ll = AutomataSUL_Graph('/home/yangting/Documents/Ble_Test/result/pairing_select_05_28.dot')
+# ll = AutomataSUL_Graph('/home/yangting/Documents/Ble_state_check/result/pairing_select_05_28.dot')
 # graph = ll.mealy_to_graph()
 # print(graph.nodes)
 # path = ll.find_all_paths(graph)
@@ -75,23 +76,191 @@ logger_handle = config_file.split('/')[-1].split('.')[0]
 
 logger = configure_logger( logger_handle, config.device["log_path"],logging.DEBUG)
 key_path = config.device["key_path"]
+ble_sul = Bluetooth_SUL(NRF52Dongle(port_name=port_name,logs_pcap=logs_pcap,pcap_filename=pcap_filename), advertiser_address, iat,rat,role,rx_len,tx_len, logger_handle, key_path,test_layer, config_file,return_handle_layer=return_handle_layer,send_handle_layer=send_handle_layer)
+
 
 
 # 获取log配置
-ble_sul = Bluetooth_SUL(NRF52Dongle(port_name=port_name,logs_pcap=logs_pcap,pcap_filename=pcap_filename), advertiser_address, iat,rat,role,rx_len,tx_len, logger_handle, key_path,test_layer, config_file, statepkt_dict=statepkt_dict,return_handle_layer=return_handle_layer,send_handle_layer=send_handle_layer)
 
 ###
+# ll_pause_enc_req_pkt,identity_address_information_pkt,ll_enc_rsp_pkt,pairing_dhkey_check_pkt
+# ble_sul.pre()
+# pkt = ble_sul.get_packet("ll_version_ind_pkt")
+# pkt.show2()
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+# pkt = ble_sul.get_packet("pairing_request_pkt")
+# pkt.show2()
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+# pkt = ble_sul.get_packet("pairing_public_key_pkt")
 
-ble_sul.pre()
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+# pkt = ble_sul.get_packet("pairing_random_pkt")
+# pkt.show2()
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+# pkt = ble_sul.get_packet("pairing_dhkey_check_pkt")
+# pkt.show2()
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+# pkt = ble_sul.get_packet("ll_enc_req_pkt")
+# pkt.show2()
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+# pkt = ble_sul.get_packet("ll_start_enc_rsp_pkt")
+# pkt.show2()
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+# pkt = ble_sul.get_packet("ll_pause_enc_req_pkt")
+# pkt.show2()
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+# pkt = ble_sul.get_packet("identity_address_information_pkt")
+# pkt.show2()
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+# pkt = ble_sul.get_packet("ll_enc_rsp_pkt")
+# pkt.show2()
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
 
-pkt = ble_sul.get_packet("ll_terminate_ind_pkt")
-pkt.RFU = 5
-ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 10)
+# pkt = ble_sul.get_packet("pairing_dhkey_check_pkt")
+# pkt.show2()
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
 
-ble_sul.post()
+# ble_sul.post()
 
-ble_sul.pre()
-ble_sul.post()
+
+# ble_sul.pre()
+# # pkt = ble_sul.get_packet("ll_feature_req_pkt")
+# # pkt.show2()
+# # ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+# # pkt = ble_sul.get_packet("ll_length_req_pkt")
+# # pkt.show2()
+# # ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+
+# pkt = ble_sul.get_packet("ll_version_ind_pkt")
+# pkt.show2()
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+
+
+# pkt = ble_sul.get_packet("pairing_request_pkt")
+# # pkt.show2()
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+# pkt = ble_sul.get_packet("pairing_public_key_pkt")
+# pkt.show2()
+# # ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 100,connect_max_attempts = 100)
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+# pkt = ble_sul.get_packet("pairing_random_pkt")
+# pkt.show2()
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+# pkt = ble_sul.get_packet("pairing_confirm_pkt") 
+# pkt.show2()
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+
+
+
+# pkt = ble_sul.get_packet("ll_reject_ind_pkt")
+# # pkt.show2()
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+
+# pkt = ble_sul.get_packet("ll_pause_enc_req_pkt")
+# pkt.show2()
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+
+
+# ble_sul.post()
+
+# def send_packets():
+#     ble_sul = Bluetooth_SUL(NRF52Dongle(port_name=port_name,logs_pcap=logs_pcap,pcap_filename=pcap_filename), advertiser_address, iat,rat,role,rx_len,tx_len, logger_handle, key_path,test_layer, config_file,return_handle_layer=return_handle_layer,send_handle_layer=send_handle_layer)
+
+
+#     ble_sul.pre()
+
+#     pkt = ble_sul.get_packet("pairing_request_pkt")
+#     pkt.show2()
+#     ble_sul.packet_send_received_control(send_pkt=pkt, connect_min_attempts=10, connect_max_attempts=50)
+
+#     pkt = ble_sul.get_packet("ll_length_req_pkt")
+#     pkt.show2()
+#     ble_sul.packet_send_received_control(send_pkt=pkt, connect_min_attempts=3, connect_max_attempts=3)
+#     pkt = ble_sul.get_packet("ll_length_req_pkt")
+#     pkt.show2()
+#     ble_sul.packet_send_received_control(send_pkt=pkt, connect_min_attempts=3, connect_max_attempts=3)
+#     pkt = ble_sul.get_packet("ll_length_req_pkt")
+#     pkt.show2()
+#     ble_sul.packet_send_received_control(send_pkt=pkt, connect_min_attempts=3, connect_max_attempts=3)
+#     pkt = ble_sul.get_packet("ll_length_req_pkt")
+#     pkt.show2()
+#     ble_sul.packet_send_received_control(send_pkt=pkt, connect_min_attempts=3, connect_max_attempts=3)
+#     pkt = ble_sul.get_packet("ll_length_req_pkt")
+#     pkt.show2()
+#     ble_sul.packet_send_received_control(send_pkt=pkt, connect_min_attempts=3, connect_max_attempts=3)
+
+#     ble_sul.post()
+
+# def another_packets():
+#     ble_sul = Bluetooth_SUL(NRF52Dongle(port_name="/dev/ttyACM2",logs_pcap=logs_pcap,pcap_filename=pcap_filename), advertiser_address, iat,rat,role,rx_len,tx_len, logger_handle, None,test_layer, config_file,return_handle_layer=return_handle_layer,send_handle_layer=send_handle_layer)
+
+
+#     ble_sul.pre()
+
+#     pkt = ble_sul.get_packet("pairing_request_pkt")
+#     pkt.show2()
+#     ble_sul.packet_send_received_control(send_pkt=pkt, connect_min_attempts=10, connect_max_attempts=50)
+
+#     pkt = ble_sul.get_packet("ll_length_req_pkt")
+#     pkt.show2()
+#     ble_sul.packet_send_received_control(send_pkt=pkt, connect_min_attempts=3, connect_max_attempts=3)
+#     pkt = ble_sul.get_packet("ll_length_req_pkt")
+#     pkt.show2()
+#     ble_sul.packet_send_received_control(send_pkt=pkt, connect_min_attempts=3, connect_max_attempts=3)
+#     pkt = ble_sul.get_packet("ll_length_req_pkt")
+#     pkt.show2()
+#     ble_sul.packet_send_received_control(send_pkt=pkt, connect_min_attempts=3, connect_max_attempts=3)
+#     pkt = ble_sul.get_packet("ll_length_req_pkt")
+#     pkt.show2()
+#     ble_sul.packet_send_received_control(send_pkt=pkt, connect_min_attempts=3, connect_max_attempts=3)
+#     pkt = ble_sul.get_packet("ll_length_req_pkt")
+#     pkt.show2()
+#     ble_sul.packet_send_received_control(send_pkt=pkt, connect_min_attempts=3, connect_max_attempts=3)
+
+#     ble_sul.post()
+
+# # Create threads
+# thread1 = threading.Thread(target=send_packets)
+# thread2 = threading.Thread(target=another_packets)
+
+# # Start threads
+# thread1.start()
+# thread2.start()
+
+# # Wait for both threads to complete
+# thread1.join()
+# thread2.join()
+
+for i in range(5):
+    sleep(random.randint(1,5))
+    ble_sul.pre()
+
+    pkt = ble_sul.get_packet("pairing_request_pkt")
+    pkt.show2()
+    ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+
+
+    pkt = ble_sul.get_packet("ll_length_req_pkt")
+    pkt.show2()
+    ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+    pkt = ble_sul.get_packet("ll_length_req_pkt")
+    pkt.show2()
+    ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+    pkt = ble_sul.get_packet("ll_length_req_pkt")
+    pkt.show2()
+    ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 15)
+    pkt = ble_sul.get_packet("ll_length_req_pkt")
+    pkt.show2()
+    ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 15)
+    pkt = ble_sul.get_packet("ll_length_req_pkt")
+    pkt.show2()
+    ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 15)
+
+
+    ble_sul.post()
+
+    ble_sul.pre()
+    
 
 
 

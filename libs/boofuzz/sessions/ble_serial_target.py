@@ -1,8 +1,8 @@
 import time
-from Ble_Test.driver.NRF52_dongle import *
+from Ble_state_check.driver.NRF52_dongle import *
 from boofuzz import exception
 
-from Ble_Test.packet.sul_interface_normal import *
+from Ble_state_check.packet.sul_interface_normal import *
 
 
 class BLESerialTarget():

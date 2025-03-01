@@ -2,7 +2,7 @@
 test_layer:test_all_pkts
 ------------------------------
 Advertiser Address:  00:E0:12:34:56:78
-config_file:  /home/yangting/Documents/Ble_Test/srcs/Config_File/Realtek/peripheral_07_30.ini
+config_file:  /home/yangting/Documents/Ble_state_check/srcs/Config_File/Realtek/peripheral_07_30.ini
 ['ll_base', 'sm_legency', 'll_enc_req_pkt', 'll_enc_rsp_pkt', 'll_start_enc_req_pkt', 'll_start_enc_rsp_pkt', 'll_pause_enc_req_pkt', 'll_pause_enc_rsp_pkt']
 -----------------Pre Start-----------------
 Master Address:  f9:c2:15:5a:22:45
@@ -126,21 +126,21 @@ RX <--- BTLE / BTLE_ADV / BTLE_SCAN_RSP
 TX ---> BTLE / BTLE_ADV / BTLE_CONNECT_REQ
 RX <--- BTLE / BTLE_DATA / BTLE_CTRL / LL_SLAVE_FEATURE_REQ
 Traceback (most recent call last):
-  File "/home/yangting/Documents/Ble_Test/srcs/ble_learning.py", line 107, in <module>
+  File "/home/yangting/Documents/Ble_state_check/srcs/ble_learning.py", line 107, in <module>
     learned_model = run_KV(alphabet, ble_sul, eq_oracle, automaton_type='mealy', logger_handle=logger_handle, max_learning_rounds=500,cache_and_non_det_check=False,print_level=3)
                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yangting/Documents/Ble_Test/libs/aalpy/learning_algs/deterministic/KV.py", line 100, in run_KV
+  File "/home/yangting/Documents/Ble_state_check/libs/aalpy/learning_algs/deterministic/KV.py", line 100, in run_KV
     initial_state.output_fun[a] = sul.query((a,))[-1]
                                   ^^^^^^^^^^^^^^^
-  File "/home/yangting/Documents/Ble_Test/../Ble_Test/srcs/State_Machine/Bluetooth_SUL.py", line 500, in query
+  File "/home/yangting/Documents/Ble_state_check/../Ble_state_check/srcs/State_Machine/Bluetooth_SUL.py", line 500, in query
     self.pre()
-  File "/home/yangting/Documents/Ble_Test/../Ble_Test/srcs/State_Machine/Bluetooth_SUL.py", line 320, in pre
+  File "/home/yangting/Documents/Ble_state_check/../Ble_state_check/srcs/State_Machine/Bluetooth_SUL.py", line 320, in pre
     output = self.connection_packet_send_received(self.packet_construction.get_pkt('connect_req'), connect_min_attempts=constant.CONNECT_MIN_ATTEMPTS, connect_max_attempts=constant.CONNECT_MAX_ATTEMPTS)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yangting/Documents/Ble_Test/../Ble_Test/srcs/State_Machine/Bluetooth_SUL.py", line 285, in connection_packet_send_received
+  File "/home/yangting/Documents/Ble_state_check/../Ble_state_check/srcs/State_Machine/Bluetooth_SUL.py", line 285, in connection_packet_send_received
     data = self.driver.raw_receive()
            ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yangting/Documents/Ble_Test/../Ble_Test/driver/NRF52_dongle.py", line 102, in raw_receive
+  File "/home/yangting/Documents/Ble_state_check/../Ble_state_check/driver/NRF52_dongle.py", line 102, in raw_receive
     c = self.serial.read(1)
         ^^^^^^^^^^^^^^^^^^^
   File "/home/yangting/miniconda3/envs/python3.11/lib/python3.11/site-packages/serial/serialposix.py", line 565, in read

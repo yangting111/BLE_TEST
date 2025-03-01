@@ -11,25 +11,22 @@ device = {
     "role": 1,
     "rx_len": 251,
     "tx_len": 251,
-    "packet_layer": 4,
-    "config_file": "/home/yangting/Documents/Ble_Test/srcs/Config_File/Realtek/peripheral_07_30.ini",
-    "learned_model_path": "/home/yangting/Documents/Ble_Test/result/dot_file/Realtek/peripheral_all_test.dot",
-    "log_path": "/home/yangting/Documents/Ble_Test/result/log_file/Realtek/test.log",
-    "port_name": "/dev/ttyACM0",
+    "packet_layer": 1,
+    "config_file": "/home/yangting/Documents/Ble_state_check/srcs/Config_File/Realtek/peripheral_07_30.ini",
+    "learned_model_path": "/home/yangting/Documents/Ble_state_check/result/dot_file/Realtek/peripheral_all_test.dot",
+    "model_path": "/home/yangting/Documents/Ble_state_check/result/dot_file/Realtek/pairing_sm_encryption.dot",
+    "log_path": "/home/yangting/Documents/Ble_state_check/result/log_file/Realtek/test.log",
+    "port_name": "/dev/ttyACM1",
     "logs_pcap": True,
-    "pcap_filename": "/home/yangting/Documents/Ble_Test/result/log_file/Realtek/test_all.pcap",
+    "pcap_filename": "/home/yangting/Documents/Ble_state_check/result/log_file/Realtek/test_all.pcap",
     "return_handle_layer": [ 1, 3],
     "send_handle_layer": [1, 3],
-    "key_path": "/home/yangting/Documents/Ble_Test/result/log_file/Realtek/key.txt",
+    "key_path": "/home/yangting/Documents/Ble_state_check/result/log_file/Realtek/key.txt",
     "statepkt_dict": {"ll_base":['ll_feature_req_pkt', 'll_feature_rsp_pkt','ll_length_req_pkt', 'll_version_ind_pkt'],"sm_legency":['pairing_request_pkt','pairing_confirm_pkt', 'pairing_random_pkt', ],"sm_sc":['pairing_request_pkt','pairing_public_key_pkt',"pairing_random_pkt","pairing_dhkey_check_pkt"]},
 }
 
-fuzz = {
-    "fuzz_pcap_filename": "/home/yangting/Documents/Ble_Test/result/log_file/Realtek/test_att_fuzz.pcap",
-    "untested_layer": [LL_TERMINATE_IND, LL_UNKNOWN_RSP,],
-    "unadd_layer": [],
-    # 对于测出问题的数据包，对于block_packet的定义，是一个二维数组，第一维是block_packet的类型，第二维是block_packet的内容
-    "block_packet":[['ll_terminate_ind_pkt',"BTLE_DATA", "RFU", 0],]
-
-
+statecheck = {
+    "tested_letters_file" : "/home/yangting/Documents/Ble_state_check/result/log_file/Realtek/tested_letters.txt",
+    "output_path": "/home/yangting/Documents/Ble_state_check/result/log_file/Realtek/output.txt",
+    "block_pattern":[["ll_length_req_pkt|ll_length_rsp_pkt","ll_length_req_pkt"],]
 }

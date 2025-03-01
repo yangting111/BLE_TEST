@@ -13,9 +13,9 @@ sys.path.insert(0,os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+"/
 
 
 
-from Ble_Test.libs.ble_decrypter.utils import ll_enc
-from Ble_Test.packet.read_config import *
-from Ble_Test.driver.NRF52_dongle import NRF52Dongle
+from Ble_state_check.libs.ble_decrypter.utils import ll_enc
+from Ble_state_check.packet.read_config import *
+from Ble_state_check.driver.NRF52_dongle import NRF52Dongle
 from scapy.compat import raw
 from boofuzz.primitives.bit_field import Bit_Field
 from scapy.volatile import *
@@ -31,24 +31,24 @@ from colorama import Fore
 
 
 
-from Ble_Test.srcs.Send_Packet.BLE_LL import BLE_LL
-from Ble_Test.srcs.Send_Packet.BLE_L2CAP import BLE_L2CAP
+from Ble_state_check.srcs.Send_Packet.BLE_LL import BLE_LL
+from Ble_state_check.srcs.Send_Packet.BLE_L2CAP import BLE_L2CAP
 
 from aalpy.utils import load_automaton_from_file
 import networkx as nx
 import matplotlib.pyplot as plt
 
-from Ble_Test.srcs.State_Machine.Bluetooth_SUL import Bluetooth_SUL
-from Ble_Test.libs.boofuzz.blocks import block
-from Ble_Test.libs.boofuzz.primitives import *
+from Ble_state_check.srcs.State_Machine.Bluetooth_SUL import Bluetooth_SUL
+from Ble_state_check.libs.boofuzz.blocks import block
+from Ble_state_check.libs.boofuzz.primitives import *
 
-from Ble_Test.srcs.Log_Config.logger_config import *
+from Ble_state_check.srcs.Log_Config.logger_config import *
 
 
-from Ble_Test.srcs.Config_File.Esp32 import config
+from Ble_state_check.srcs.Config_File.Esp32 import config
 str = config.device["advertiser_address"]
 Layers = {0:"adv_pkts", 1:"ll_pkts", 2:"l2cap_pkts", 3:"smp_pkts", 4:"att_pkts",5:"test_legency_pkts",6:"test_sc_pkts"}
-# ll = AutomataSUL_Graph('/home/yangting/Documents/Ble_Test/result/pairing_select_05_28.dot')
+# ll = AutomataSUL_Graph('/home/yangting/Documents/Ble_state_check/result/pairing_select_05_28.dot')
 # graph = ll.mealy_to_graph()
 # print(graph.nodes)
 # path = ll.find_all_paths(graph)
@@ -81,22 +81,31 @@ ble_sul = Bluetooth_SUL(NRF52Dongle(port_name=port_name,logs_pcap=logs_pcap,pcap
 
 ###
 
+# ll_feature_req_pkt,ll_length_req_pkt,ll_version_ind_pkt,pairing_request_pkt,pairing_public_key_pkt,pairing_random_pkt,pairing_dhkey_check_pkt,ll_start_enc_req_pkt,ll_connection_param_rsp_pkt,ll_enc_req_pkt
 
 
-# first time connection
 ble_sul.pre()
 
 
+pkt = ble_sul.get_packet("ll_feature_req_pkt")
+pkt.show2()
+ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+pkt = ble_sul.get_packet("ll_version_ind_pkt")
+pkt.show2()
+ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+pkt = ble_sul.get_packet("ll_length_req_pkt")
+pkt.show2()
+ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
 
 pkt = ble_sul.get_packet("pairing_request_pkt")
 
 
-pkt["SM_Pairing_Request"].iocap = 0x03
-pkt["SM_Pairing_Request"].oob = 0x00
-pkt["SM_Pairing_Request"].authentication = 0x0d
-pkt["SM_Pairing_Request"].max_key_size = 0x10
-pkt["SM_Pairing_Request"].initiator_key_distribution = 0x0f
-pkt["SM_Pairing_Request"].responder_key_distribution = 0x0f
+# pkt["SM_Pairing_Request"].iocap = 0x03
+# pkt["SM_Pairing_Request"].oob = 0x00
+# pkt["SM_Pairing_Request"].authentication = 0x0d
+# pkt["SM_Pairing_Request"].max_key_size = 0x10
+# pkt["SM_Pairing_Request"].initiator_key_distribution = 0x0f
+# pkt["SM_Pairing_Request"].responder_key_distribution = 0x0f
 pkt.show2()
 ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
 pkt = ble_sul.get_packet("pairing_public_key_pkt")
@@ -109,7 +118,7 @@ ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 50,conn
 pkt = ble_sul.get_packet("pairing_dhkey_check_pkt")
 pkt.show2()
 ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
-pkt = ble_sul.get_packet("ll_enc_req_pkt")
+pkt = ble_sul.get_packet("ll_start_enc_req_pkt")
 pkt.show2()
 ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
 
@@ -117,40 +126,44 @@ ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,conn
 # pkt.show2()
 # ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
 
-pkt = ble_sul.get_packet("ll_start_enc_rsp_pkt")
+pkt = ble_sul.get_packet("ll_connection_param_rsp_pkt")
 pkt.show2()
 ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 50,connect_max_attempts = 50)
-pkt = ble_sul.get_packet("ll_pause_enc_req_pkt")
+pkt = ble_sul.get_packet("ll_enc_req_pkt")
 pkt.show2()
 ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
 
-sk = ble_sul.packet_construction.ll_enc.sk
-iv = ble_sul.packet_construction.ll_enc.iv
-skd = ble_sul.packet_construction.ll_enc.skd
-ble_sul.post()
+# sk = ble_sul.packet_construction.ll_enc.sk
+# iv = ble_sul.packet_construction.ll_enc.iv
+# skd = ble_sul.packet_construction.ll_enc.skd
+ble_sul.post()# disconnection
 
+
+# iv = bytes.fromhex('833128ebc77e0042')
+# skd = bytes.fromhex('e8c7fd7bc1de226330a70b193c8e4741')
+# sk = bytes.fromhex('0c40b8cc945798ff61da43cdb1dd0632')
 # second time connection
-ble_sul.pre()
-ble_sul.packet_construction.ll_enc.sk = sk
-ble_sul.packet_construction.ll_enc.iv = iv
-ble_sul.packet_construction.ll_enc.skd = skd
+# ble_sul.pre()
+# ble_sul.packet_construction.ll_enc.sk = sk
+# ble_sul.packet_construction.ll_enc.iv = iv
+# ble_sul.packet_construction.ll_enc.skd = skd
 
-pkt = ble_sul.get_packet("ll_start_enc_rsp_pkt")
-pkt.show2()
-ble_sul.packet_construction.set_encryption(False)
-ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
+# pkt = ble_sul.get_packet("ll_start_enc_rsp_pkt")
+# pkt.show2()
+# ble_sul.packet_construction.set_encryption(False)
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
 
-pkt = ble_sul.get_packet("ll_pause_enc_req_pkt")
-pkt.show2()
-ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
-
-
-
-ble_sul.post()
+# pkt = ble_sul.get_packet("ll_pause_enc_req_pkt")
+# pkt.show2()
+# ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
 
 
-ble_sul.driver.save_pcap()
-ble_sul.packet_construction.save_key()
+
+# ble_sul.post()
+
+
+# ble_sul.driver.save_pcap()
+# ble_sul.packet_construction.save_key()
 
 
 

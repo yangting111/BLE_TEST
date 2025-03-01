@@ -2,7 +2,7 @@
 test_layer:test_pkts
 ------------------------------
 Advertiser Address:  e8:31:cd:73:f8:e2
-config_file:  /home/yangting/Documents/Ble_Test/srcs/Config_File/Esp32/esp_ble_security.ini
+config_file:  /home/yangting/Documents/Ble_state_check/srcs/Config_File/Esp32/esp_ble_security.ini
 Master Address:  77:d7:20:e2:2d:08
 Advertiser Address:  e8:31:cd:73:f8:e2
 ['ll_enc_req_pkt', 'll_enc_rsp_pkt', 'll_start_enc_req_pkt', 'll_start_enc_rsp_pkt', 'll_pause_enc_req_pkt', 'll_pause_enc_rsp_pkt', 'security_request_pkt']
@@ -10819,7 +10819,7 @@ Equivalence Query
  # Steps               : 62
 -----------------------------------
 Traceback (most recent call last):
-  File "/home/yangting/Documents/Ble_Test/srcs/ble_learning.py", line 102, in <module>
+  File "/home/yangting/Documents/Ble_state_check/srcs/ble_learning.py", line 102, in <module>
     ble_sul.driver.save_pcap()
     ^^^^^^^^^^
 AttributeError: 'FailSafeCacheSUL' object has no attribute 'driver'

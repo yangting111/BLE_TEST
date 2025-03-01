@@ -6,33 +6,27 @@
 device = {
     "advertiser_address": "D8:5F:77:DB:68:C5",
     "sul_type": 0,
-    "iat": 0,
+    "iat": 1,
     "rat": 0,
     "role": 1,
     "rx_len": 251,
     "tx_len": 251,
-    "packet_layer": 7,
-    "config_file": "/home/yangting/Documents/Ble_Test/srcs/Config_File/Telink/ble_security.ini",
-    "learned_model_path": "/home/yangting/Documents/Ble_Test/result/dot_file/Telink/ble_security_l2cap.dot",
-    "log_path": "/home/yangting/Documents/Ble_Test/result/log_file/Telink/test_l2cap.log",
-    "port_name": "/dev/ttyACM2",
-    "logs_pcap": True,
-    "pcap_filename": "/home/yangting/Documents/Ble_Test/result/log_file/Telink/test_smp_legency.pcap",
+    "packet_layer": 1,
+    "config_file": "/home/yangting/Documents/Ble_state_check/srcs/Config_File/Telink/ble_security.ini",
+    "model_path": "/home/yangting/Documents/Ble_state_check/result/dot_file/Telink/pairing_legency_encryption.dot",
+    "log_path": "/home/yangting/Documents/Ble_state_check/result/log_file/Telink/test_l2cap.log",
+    "port_name": "/dev/ttyACM0",
+    "logs_pcap":  False,
+    "pcap_filename": "/home/yangting/Documents/Ble_state_check/result/log_file/Telink/test_smp_legency.pcap",
     "return_handle_layer": [1,3] ,
     "send_handle_layer":[1,3], # Uncomment and modify if needed
-    "key_path": "/home/yangting/Documents/Ble_Test/result/log_file/Telink/key.txt",
+    "key_path": "/home/yangting/Documents/Ble_state_check/result/log_file/Telink/key.txt",
     "statepkt_dict": {"ll_base":['ll_feature_req_pkt','ll_length_req_pkt', 'll_version_ind_pkt',],"sm_legency":['pairing_request_pkt','pairing_confirm_pkt', 'pairing_random_pkt', ],"sm_sc":['pairing_request_pkt','pairing_public_key_pkt',"pairing_random_pkt","pairing_dhkey_check_pkt"]},
 }
 
-fuzz = {
-    "fuzz_pcap_filename": "/home/yangting/Documents/Ble_Test/result/log_file/Telink/test_l2cap_fuzz.pcap",
-    "untested_layer": ["LL_TERMINATE_IND", "LL_VERSION_IND"],
-    "unadd_layer": [] , # 如果有需要，可以在这里添加未添加的层
-   #"block_packet":[['ll_terminate_ind_pkt',"BTLE_DATA", "RFU", 0],]
-    "block_packet": [],
-    "fuzz_path" : ['ll_feature_req_pkt','ll_length_req_pkt', 'll_version_ind_pkt','pairing_request_pkt','pairing_confirm_pkt', 'pairing_random_pkt','ll_enc_req_pkt', 'll_start_enc_rsp_pkt',"signing_information_pkt", 'll_pause_enc_req_pkt', 'll_pause_enc_rsp_pkt'],
-    "start" : "start",
-    "end" : "start",
-    "fuzz_time": 3,
+statecheck = {
+    "tested_letters_file" : "/home/yangting/Documents/Ble_state_check/result/log_file/Telink/tested_letters.txt",
+    "output_path": "/home/yangting/Documents/Ble_state_check/result/log_file/Telink/output.txt",
+
 }
 

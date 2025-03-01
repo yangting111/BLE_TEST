@@ -198,7 +198,7 @@ class NRF52Dongle:
     def reset(self):
         self.serial.close()
         print('NRF52 Dongle closed')
-        sleep(5)
+        sleep(1)
 
         # with LowLevel.API('NRF52') as api:
         #     api.debug_reset()
@@ -207,6 +207,6 @@ class NRF52Dongle:
         # sleep(5)
 
         self.serial = serial.Serial(self.port_name, self.baudrate, timeout=0.1)
-        sleep(5)
+        sleep(1)
 
         print("Dongle connection reset complete")

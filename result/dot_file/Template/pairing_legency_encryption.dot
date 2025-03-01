@@ -1,0 +1,35 @@
+digraph pairing_legency_encryption {
+s0 [label="start"];
+s1 [label="s1"];
+s2 [label="s2"];
+s3 [label="s3"];
+s4 [label="s4"];
+s5 [label="s5"];
+s6 [label="s6"];
+s7 [label="s7"];
+s8 [label="s8"];
+s9 [label="s9"];
+s10 [label="s10"];
+s11 [label="s11"];
+s12 [label="s12"];
+s13 [label="s13"];
+s14 [label="end"];
+s0 -> s1  [label="scan_req/scan_rsp"];
+s1 -> s2  [label="connect_req/ll_slave_feature_req"];
+s2 -> s2  [label="ll_feature_req/ll_feature_rsp"]; 
+s2 -> s2  [label="ll_length_req/ll_length_rsp"];
+s2 -> s3  [label="ll_version_ind/ll_version_ind"]; 
+s3 -> s4  [label="pairing_request_pkt/pairing_response_pkt"];
+s4 -> s5  [label="pairing_confirm_pkt/pairing_confirm_pkt"];
+s5 -> s6  [label="pairing_random_pkt/pairing_random_pkt"];
+s6 -> s7  [label="ll_enc_req_pkt/ll_enc_rsp_pkt,ll_start_enc_req_pkt"];
+s7 -> s8  [label="ll_start_enc_rsp_pkt/ll_start_enc_rsp_pkt"];
+s8 -> s9  [label="encryption_information_pkt/empty" ];
+s9 -> s10  [label="master_identification_pkt/empty"];
+s10 -> s11  [label="identity_address_information_pkt/empty"];
+s11 -> s12  [label="signing_information_pkt/empty"];
+s12 -> s13  [label="ll_pause_enc_req_pkt/ll_pause_enc_rsp_pkt"];
+s13 -> s14 [label="ll_terminate_ind_pkt/empty"];
+__start0 [label="", shape=none];
+__start0 -> s0  [label=""];
+}

@@ -10,9 +10,9 @@ from scapy.utils import RawPcapReader
 from scapy.all import *
 from scapy.layers.bluetooth import *
 from scapy.layers.bluetooth4LE import *
-from Ble_Test.libs.ble_decrypter.utils.ll_enc import *
+from Ble_state_check.libs.ble_decrypter.utils.ll_enc import *
 
-from Ble_Test.libs.ble_decrypter.utils import key
+from Ble_state_check.libs.ble_decrypter.utils import key
 
 # Process original pcap file
 import configparser
@@ -49,7 +49,7 @@ class Packet_Process():
 
 
     def process_pcap(self, file_name):
-        self.config_file_path = '/home/yangting/Documents/Ble_Test/srcs/Config_File/' + file_name.split('/')[-2]+"/"+file_name.split('/')[-1].split('.')[0] + '.ini'
+        self.config_file_path = '/home/yangting/Documents/Ble_state_check/srcs/Config_File/' + file_name.split('/')[-2]+"/"+file_name.split('/')[-1].split('.')[0] + '.ini'
         print('Opening {}...'.format(file_name))
         for (pkt_data, pkt_metadata) in RawPcapReader(file_name):
 
@@ -266,6 +266,6 @@ class Packet_Process():
         
 if __name__ == '__main__':
     s = Packet_Process()
-    s.process_pcap(file_name = "/home/yangting/Documents/Ble_Test/packet/Microchip/unpairing.pcapng")
-    pkt_dict = s.read_config_packet(file_name="/home/yangting/Documents/Ble_Test/srcs/Config_File/Microchip/unpairing_8_26.ini", section='ll_pkts')
+    s.process_pcap(file_name = "/home/yangting/Documents/Ble_state_check/packet/Microchip/unpairing.pcapng")
+    pkt_dict = s.read_config_packet(file_name="/home/yangting/Documents/Ble_state_check/srcs/Config_File/Microchip/unpairing_8_26.ini", section='ll_pkts')
 

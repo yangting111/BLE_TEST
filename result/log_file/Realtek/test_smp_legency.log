@@ -2,7 +2,7 @@
 test_layer:test_pkts
 ------------------------------
 Advertiser Address:  00:E0:12:34:56:78
-config_file:  /home/yangting/Documents/Ble_Test/srcs/Config_File/Realtek/peripheral_07_30.ini
+config_file:  /home/yangting/Documents/Ble_state_check/srcs/Config_File/Realtek/peripheral_07_30.ini
 Master Address:  a0:fc:94:ae:59:c3
 Advertiser Address:  00:E0:12:34:56:78
 BTLE_ADV_IND          PDU_type=0  
@@ -13030,4 +13030,4 @@ Non-determinism in learning: 0
 Non-determinism in equivalence check: 0
 -----------------------------------
 Visualization started in the background thread.
-Model saved to /home/yangting/Documents/Ble_Test/result/dot_file/Realtek/peripheral_all_test.dot.
+Model saved to /home/yangting/Documents/Ble_state_check/result/dot_file/Realtek/peripheral_all_test.dot.

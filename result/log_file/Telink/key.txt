@@ -1,2 +1,2 @@
-Master_address: a1:a3:5f:dd:2b:a7
+Master_address: 39:2a:bd:d9:a7:6a
 -------------------------------------------

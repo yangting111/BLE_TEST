@@ -1,0 +1,19 @@
+digraph pairing_sm_encryption {
+s0 [label="start"];
+s1 [label="s1"];
+s2 [label="s2"];
+s3 [label="s3"];
+s4 [label="s4"];
+s5 [label="s5"];
+s6 [label="s6"];
+s7 [label="end"];
+s0 -> s1  [label="pairing_request_pkt/BTLE|BTLE_DATA|L2CAP_Hdr|SM_Hdr|SM_Pairing_Response"];
+s1 -> s2  [label="pairing_public_key_pkt/BTLE|BTLE_DATA|L2CAP_Hdr|SM_Confirm|SM_Hdr|SM_Public_Key"];
+s2 -> s3  [label="pairing_random_pkt/BTLE|BTLE_DATA|L2CAP_Hdr|SM_Random|SM_Hdr"];
+s3 -> s4  [label="pairing_dhkey_check_pkt/BTLE|BTLE_DATA|L2CAP_Hdr|SM_DHKey_Check|SM_Hdr"];
+s4 -> s5  [label="ll_enc_req_pkt/BTLE|BTLE_CTRL|BTLE_DATA|LL_ENC_RSP|LL_START_ENC_REQ"];
+s5 -> s6  [label="ll_start_enc_rsp_pkt/BTLE|BTLE_CTRL|BTLE_DATA|L2CAP_Hdr|LL_START_ENC_RSP|SM_Encryption_Information|SM_Hdr|SM_Identity_Address_Information|SM_Identity_Information|SM_Master_Identification|SM_Signing_Information"];
+s6 -> s7 [label="ll_pause_enc_req_pkt/BTLE|BTLE_CTRL|BTLE_DATA|LL_PAUSE_ENC_RSP"];
+__start0 [label="", shape=none];
+__start0 -> s0  [label=""];
+}

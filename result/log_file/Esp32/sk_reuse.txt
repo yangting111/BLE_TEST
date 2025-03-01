@@ -1,5 +1,5 @@
 Advertiser Address:  e8:31:cd:73:f8:e2
-config_file:  /home/yangting/Documents/Ble_Test/srcs/Config_File/Esp32/esp_ble_security.ini
+config_file:  /home/yangting/Documents/Ble_state_check/srcs/Config_File/Esp32/esp_ble_security.ini
 Master Address:  84:bc:ea:de:00:df
 Advertiser Address:  e8:31:cd:73:f8:e2
 BTLE_ADV_IND          PDU_type=0  

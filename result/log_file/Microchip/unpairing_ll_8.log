@@ -102941,43 +102941,43 @@ d339ebd6031703b48c4016bd1bab292575da676e7af4f45515b66b343d94140e
 RX <--- BTLE / BTLE_DATA / BTLE_CTRL / Raw
 RX <--- BTLE / BTLE_DATA / BTLE_CTRL / Raw
 Traceback (most recent call last):
-  File "/home/yangting/Documents/Ble_Test/srcs/ble_learning.py", line 95, in <module>
+  File "/home/yangting/Documents/Ble_state_check/srcs/ble_learning.py", line 95, in <module>
     learned_model = run_KV(alphabet, ble_sul, eq_oracle, automaton_type='mealy', logger_handle=logger_handle, max_learning_rounds=500,cache_and_non_det_check=False,print_level=3)
                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yangting/Documents/Ble_Test/libs/aalpy/learning_algs/deterministic/KV.py", line 132, in run_KV
+  File "/home/yangting/Documents/Ble_state_check/libs/aalpy/learning_algs/deterministic/KV.py", line 132, in run_KV
     hypothesis = classification_tree.update_hypothesis()
                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yangting/Documents/Ble_Test/libs/aalpy/learning_algs/deterministic/ClassificationTree.py", line 206, in update_hypothesis
+  File "/home/yangting/Documents/Ble_state_check/libs/aalpy/learning_algs/deterministic/ClassificationTree.py", line 206, in update_hypothesis
     state.output_fun[input_element] = self.sul.query(state.prefix + (input_element,))[-1]
                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yangting/Documents/Ble_Test/../Ble_Test/srcs/State_Machine/Bluetooth_SUL.py", line 408, in query
+  File "/home/yangting/Documents/Ble_state_check/../Ble_state_check/srcs/State_Machine/Bluetooth_SUL.py", line 408, in query
     out = self.step(letter)
           ^^^^^^^^^^^^^^^^^
-  File "/home/yangting/Documents/Ble_Test/../Ble_Test/srcs/State_Machine/Bluetooth_SUL.py", line 388, in step
+  File "/home/yangting/Documents/Ble_state_check/../Ble_state_check/srcs/State_Machine/Bluetooth_SUL.py", line 388, in step
     received_data = self.packet_send_received_control(pkt,log=True)
                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yangting/Documents/Ble_Test/../Ble_Test/srcs/State_Machine/Bluetooth_SUL.py", line 194, in packet_send_received_control
+  File "/home/yangting/Documents/Ble_state_check/../Ble_state_check/srcs/State_Machine/Bluetooth_SUL.py", line 194, in packet_send_received_control
     re_pkt = self.packet_construction.receive_packet_handler(pkt)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yangting/Documents/Ble_Test/../Ble_Test/srcs/Send_Packet/Packet_Constuction.py", line 186, in receive_packet_handler
+  File "/home/yangting/Documents/Ble_state_check/../Ble_state_check/srcs/Send_Packet/Packet_Constuction.py", line 186, in receive_packet_handler
     result = self.ll_handle.receive_ll_handle(pkt)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yangting/Documents/Ble_Test/../Ble_Test/srcs/Send_Packet/BLE_LL.py", line 90, in receive_ll_handle
+  File "/home/yangting/Documents/Ble_state_check/../Ble_state_check/srcs/Send_Packet/BLE_LL.py", line 90, in receive_ll_handle
     result = self.ll_enc.ll_command(pkt)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yangting/Documents/Ble_Test/../Ble_Test/libs/ble_decrypter/utils/ll_enc.py", line 186, in ll_command
+  File "/home/yangting/Documents/Ble_state_check/../Ble_state_check/libs/ble_decrypter/utils/ll_enc.py", line 186, in ll_command
     self.skdm = pkt.getfieldval('skdm').to_bytes(8, byteorder='little')
                 ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yangting/Documents/Ble_Test/libs/scapy/packet.py", line 445, in getfieldval
+  File "/home/yangting/Documents/Ble_state_check/libs/scapy/packet.py", line 445, in getfieldval
     return self.payload.getfieldval(attr)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yangting/Documents/Ble_Test/libs/scapy/packet.py", line 445, in getfieldval
+  File "/home/yangting/Documents/Ble_state_check/libs/scapy/packet.py", line 445, in getfieldval
     return self.payload.getfieldval(attr)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yangting/Documents/Ble_Test/libs/scapy/packet.py", line 445, in getfieldval
+  File "/home/yangting/Documents/Ble_state_check/libs/scapy/packet.py", line 445, in getfieldval
     return self.payload.getfieldval(attr)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   [Previous line repeated 1 more time]
-  File "/home/yangting/Documents/Ble_Test/libs/scapy/packet.py", line 1770, in getfieldval
+  File "/home/yangting/Documents/Ble_state_check/libs/scapy/packet.py", line 1770, in getfieldval
     raise AttributeError(attr)
 AttributeError: skdm

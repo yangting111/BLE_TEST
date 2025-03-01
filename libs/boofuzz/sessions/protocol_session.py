@@ -28,9 +28,9 @@ from boofuzz.exception import BoofuzzFailure
 from boofuzz.monitors.BLE_TargetMonitor import BLE_TargetMonitor
 
 from boofuzz.web.app import app
-from Ble_Test.packet.sul_interface_normal import *
+from Ble_state_check.packet.sul_interface_normal import *
 from scapy.packet import *
-from Ble_Test.libs.scapy.compat import raw 
+from Ble_state_check.libs.scapy.compat import raw 
 from .connection import Connection
 from .session_info import SessionInfo
 from .web_app import WebApp

@@ -2,7 +2,7 @@ from calendar import c
 import logging
 import random
 from tracemalloc import start
-from Ble_Test.srcs.Send_Packet import constant
+from Ble_state_check.srcs.Send_Packet import constant
 
 from Fail_Exception.Fail_Exception import ConnectionError, RepeatedNonDeterministicError
 from aalpy.base.SUL import SUL

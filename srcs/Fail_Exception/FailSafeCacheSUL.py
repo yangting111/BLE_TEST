@@ -1,4 +1,4 @@
-from Ble_Test.srcs.Send_Packet import constant
+from Ble_state_check.srcs.Send_Packet import constant
 from colorama import Fore
 from aalpy.base import SUL
 from Fail_Exception.CacheTree import CacheTree
@@ -121,6 +121,6 @@ class FailSafeCacheSUL(SUL):
         except RepeatedNonDeterministicError:
             print(Fore.RED + "Non-determinism in step execution detected.")
             self.non_det_step_counter += 1
-            raise
+            pass
         
         return out

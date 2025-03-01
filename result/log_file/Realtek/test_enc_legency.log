@@ -2,7 +2,7 @@
 test_layer:test_pkts
 ------------------------------
 Advertiser Address:  00:E0:12:34:56:78
-config_file:  /home/yangting/Documents/Ble_Test/srcs/Config_File/Realtek/peripheral_07_30.ini
+config_file:  /home/yangting/Documents/Ble_state_check/srcs/Config_File/Realtek/peripheral_07_30.ini
 ['ll_enc_req_pkt', 'll_enc_rsp_pkt', 'll_start_enc_req_pkt', 'll_start_enc_rsp_pkt', 'll_pause_enc_req_pkt', 'll_pause_enc_rsp_pkt']
 -----------------Pre Start-----------------
 Master Address:  3f:c0:cd:51:16:dc
@@ -111783,17 +111783,17 @@ Error: The device is not ready. Please reset the device
 NRF52 Dongle closed
 Dongle connection reset complete
 Traceback (most recent call last):
-  File "/home/yangting/Documents/Ble_Test/srcs/ble_learning.py", line 99, in <module>
+  File "/home/yangting/Documents/Ble_state_check/srcs/ble_learning.py", line 99, in <module>
     learned_model = run_KV(alphabet, ble_sul, eq_oracle, automaton_type='mealy', logger_handle=logger_handle, max_learning_rounds=500,cache_and_non_det_check=False,print_level=3)
                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yangting/Documents/Ble_Test/libs/aalpy/learning_algs/deterministic/KV.py", line 132, in run_KV
+  File "/home/yangting/Documents/Ble_state_check/libs/aalpy/learning_algs/deterministic/KV.py", line 132, in run_KV
     hypothesis = classification_tree.update_hypothesis()
                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yangting/Documents/Ble_Test/libs/aalpy/learning_algs/deterministic/ClassificationTree.py", line 206, in update_hypothesis
+  File "/home/yangting/Documents/Ble_state_check/libs/aalpy/learning_algs/deterministic/ClassificationTree.py", line 206, in update_hypothesis
     state.output_fun[input_element] = self.sul.query(state.prefix + (input_element,))[-1]
                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yangting/Documents/Ble_Test/../Ble_Test/srcs/State_Machine/Bluetooth_SUL.py", line 441, in query
+  File "/home/yangting/Documents/Ble_state_check/../Ble_state_check/srcs/State_Machine/Bluetooth_SUL.py", line 441, in query
     self.pre()
-  File "/home/yangting/Documents/Ble_Test/../Ble_Test/srcs/State_Machine/Bluetooth_SUL.py", line 314, in pre
+  File "/home/yangting/Documents/Ble_state_check/../Ble_state_check/srcs/State_Machine/Bluetooth_SUL.py", line 314, in pre
     raise ConnectionError()
 Fail_Exception.Fail_Exception.ConnectionError

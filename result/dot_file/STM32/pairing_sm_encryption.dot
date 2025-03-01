@@ -1,0 +1,31 @@
+digraph pairing_sm_encryption {
+s0 [label="start"];
+s1 [label="s1"];
+s2 [label="s2"];
+s3 [label="s3"];
+s4 [label="s4"];
+s5 [label="s5"];
+s6 [label="s6"];
+s7 [label="s7"];
+s8 [label="s8"];
+s9 [label="s9"];
+s10 [label="s10"];
+s11 [label="s11"];
+s12 [label="end"];
+s0 -> s0  [label="ll_feature_req_pkt/ll_feature_rsp_pkt"]; 
+s0 -> s0  [label="ll_length_req_pkt/ll_length_rsp_pkt"];
+s0 -> s1  [label="ll_version_ind_pkt/ll_version_ind_pkt"]; 
+s1 -> s2  [label="pairing_request_pkt/pairing_response_pkt"]; 
+s2 -> s3  [label="pairing_public_key_pkt/pairing_public_key_pkt"];
+s3 -> s4  [label="pairing_random_pkt/pairing_random_pkt"];
+s4 -> s5  [label="pairing_dhkey_check_pkt/pairing_dhkey_check_pkt"];
+s5 -> s6  [label="ll_enc_req_pkt/ll_enc_rsp_pkt,ll_start_enc_req_pkt"];
+s6 -> s7  [label="ll_start_enc_rsp_pkt/ll_start_enc_rsp_pkt,encryption_information_pkt,master_identification_pkt,identity_address_information_pkt,signing_information_pkt"];
+s7 -> s8  [label="encryption_information_pkt/empty" ];
+s8 -> s9  [label="master_identification_pkt/empty"];
+s9 -> s10  [label="identity_address_information_pkt/empty"];
+s10 -> s11  [label="signing_information_pkt/empty"];
+s11 -> s12 [label="ll_pause_enc_req_pkt/ll_pause_enc_rsp_pkt"];
+__start0 [label="", shape=none];
+__start0 -> s0  [label=""];
+}

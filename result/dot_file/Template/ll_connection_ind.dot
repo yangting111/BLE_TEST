@@ -1,0 +1,7 @@
+digraph disconnection {
+s0 [label="start"];
+s1 [label="end"];
+s0 -> s1  [label="ll_connection_update_ind_pkt/BTLE|BTLE_DATA|L2CAP_Hdr|SM_Hdr|SM_Pairing_Response"];
+__start0 [label="", shape=none];
+__start0 -> s0  [label=""];
+}

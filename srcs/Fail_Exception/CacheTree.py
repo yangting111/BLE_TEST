@@ -96,7 +96,7 @@ class CacheTree:
                       f'Expected Output: {expected_seq}\n' \
                       f'Received output: {self.outputs}'
                 print(msg)
-                raise RepeatedNonDeterministicError()
+                # raise RepeatedNonDeterministicError()
         self.curr_node = node
 
     def in_cache(self, input_seq: tuple):

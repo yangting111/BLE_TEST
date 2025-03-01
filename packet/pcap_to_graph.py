@@ -24,4 +24,4 @@ def process_pcap(file_name):
     print('{} contains {} packets'.format(file_name, count))
 
 if __name__ == '__main__':
-    process_pcap('/home/yangting/Documents/Ble_Test/packet/esp32-provision-01.pcapng')
+    process_pcap('/home/yangting/Documents/Ble_state_check/packet/esp32-provision-01.pcapng')

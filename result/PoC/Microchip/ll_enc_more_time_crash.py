@@ -9,8 +9,8 @@ sys.path.insert(0,os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+"/
 # sys.path.insert(0,os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+"/libs/aalpy/")
 # sys.path.append(0,os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+"/srcs/")
 
-from Ble_Test.packet.read_config import *
-from Ble_Test.driver.NRF52_dongle import NRF52Dongle
+from Ble_state_check.packet.read_config import *
+from Ble_state_check.driver.NRF52_dongle import NRF52Dongle
 from scapy.compat import raw
 from boofuzz.primitives.bit_field import Bit_Field
 from scapy.volatile import *
@@ -28,14 +28,14 @@ from scapy.all import *
 from aalpy.utils import load_automaton_from_file
 
 
-from Ble_Test.srcs.State_Machine.Bluetooth_SUL import Bluetooth_SUL
+from Ble_state_check.srcs.State_Machine.Bluetooth_SUL import Bluetooth_SUL
 
-from Ble_Test.libs.boofuzz.primitives import *
+from Ble_state_check.libs.boofuzz.primitives import *
 
-from Ble_Test.srcs.Log_Config.logger_config import *
+from Ble_state_check.srcs.Log_Config.logger_config import *
 
 
-from Ble_Test.srcs.Config_File.Microchip import config
+from Ble_state_check.srcs.Config_File.Microchip import config
 str = config.device["advertiser_address"]
 Layers = {0:"adv_pkts", 1:"ll_pkts", 2:"l2cap_pkts", 3:"smp_pkts", 4:"att_pkts",5:"test_legency_pkts",6:"test_sc_pkts"}
 advertiser_address = config.device["advertiser_address"]
@@ -69,12 +69,7 @@ while i < 50:
     ble_sul.pre()
 
     pkt = ble_sul.get_packet("pairing_request_pkt")
-    pkt["SM_Pairing_Request"].iocap = 0x03
-    pkt["SM_Pairing_Request"].oob = 0x00
-    pkt["SM_Pairing_Request"].authentication = 0x28
-    pkt["SM_Pairing_Request"].max_key_size = 0x10
-    pkt["SM_Pairing_Request"].initiator_key_distribution = 0x0f
-    pkt["SM_Pairing_Request"].responder_key_distribution = 0x0f
+   
     pkt.show2()
     ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
     pkt = ble_sul.get_packet("pairing_public_key_pkt")

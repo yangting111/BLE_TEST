@@ -32,6 +32,8 @@ class MealyMachine(DeterministicAutomaton[MealyState[InputType, OutputType]]):
 
                 output corresponding to the input from the current state
         """
+        # print(self.current_state.output_fun)
+        # print(self.current_state.transitions)
         output = self.current_state.output_fun[letter]
         self.current_state = self.current_state.transitions[letter]
         return output
