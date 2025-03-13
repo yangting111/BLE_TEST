@@ -69,12 +69,7 @@ while i < 50:
     ble_sul.pre()
 
     pkt = ble_sul.get_packet("pairing_request_pkt")
-    pkt["SM_Pairing_Request"].iocap = 0x03
-    pkt["SM_Pairing_Request"].oob = 0x00
-    pkt["SM_Pairing_Request"].authentication = 0x28
-    pkt["SM_Pairing_Request"].max_key_size = 0x10
-    pkt["SM_Pairing_Request"].initiator_key_distribution = 0x0f
-    pkt["SM_Pairing_Request"].responder_key_distribution = 0x0f
+
     pkt.show2()
     ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,connect_max_attempts = 50)
     pkt = ble_sul.get_packet("pairing_public_key_pkt")

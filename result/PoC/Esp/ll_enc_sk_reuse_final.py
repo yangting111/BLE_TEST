@@ -127,8 +127,12 @@ ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,conn
 sk = ble_sul.packet_construction.ll_enc.sk
 iv = ble_sul.packet_construction.ll_enc.iv
 skd = ble_sul.packet_construction.ll_enc.skd
-ble_sul.post()
+ble_sul.post()# disconnection
 
+
+# iv = bytes.fromhex('833128ebc77e0042')
+# skd = bytes.fromhex('e8c7fd7bc1de226330a70b193c8e4741')
+# sk = bytes.fromhex('0c40b8cc945798ff61da43cdb1dd0632')
 # second time connection
 ble_sul.pre()
 ble_sul.packet_construction.ll_enc.sk = sk
@@ -149,8 +153,8 @@ ble_sul.packet_send_received_control(send_pkt=pkt,connect_min_attempts = 10,conn
 ble_sul.post()
 
 
-ble_sul.driver.save_pcap()
-ble_sul.packet_construction.save_key()
+# ble_sul.driver.save_pcap()
+# ble_sul.packet_construction.save_key()
 
 
 
