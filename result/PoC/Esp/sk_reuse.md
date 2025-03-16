@@ -32,7 +32,7 @@ During the reconnection process, the device is expected to generate a new sessio
 - **Bypassing Authentication:** Devices relying on the integrity of session key updates could be tricked into maintaining an insecure connection.
 
 ## 5. **Exploitation Scenario**
-1. **Step 1:** The attacker eavesdrops on an existing encrypted connection and stores the session key.
+1. **Step 1:** The attacker first generates a session key in the device through a one-time pairing.
 2. **Step 2:** The victim device disconnects and later attempts to reconnect.
 3. **Step 3:** Instead of negotiating a new session key, the device incorrectly continues using the old SK.
 4. **Step 4:** The attacker, possessing the old SK, can decrypt new communication, inject malicious packets, or impersonate a trusted device.
