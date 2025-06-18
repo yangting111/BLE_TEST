@@ -33,11 +33,11 @@ A proof-of-concept has been developed to reproduce the issue. The PoC initiates 
 ## 5. **Steps to Reproduce**
 1. Initiate a BLE connection to LP-CC2652RB.
 2. Before `PAIRING_REQUEST` is received, inject a raw unencrypted `LL_PAUSE_ENC_REQ`.
-![Invalid Pause Injection](picture/1.png)
+<img src="picture/1.png" alt="Invalid Pause Injection">
 
 3. Observe that the device accepts the packet and fails to continue the pairing process.
-![Accepts the packet](picture/2.png)
-![Fails to continue the pairing process](picture/3.png)
+<img src="picture/2.png" alt="Accepts the packet" width="70%">
+<img src="picture/3.png" alt="Fails to continue the pairing process" width="70%">
 
 ## 6. **Security Impact**
 
