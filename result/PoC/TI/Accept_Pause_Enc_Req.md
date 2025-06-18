@@ -40,7 +40,7 @@ A proof-of-concept has been developed to reproduce the issue. The PoC initiates 
 ![Fails to continue the pairing process](picture/3.png)
 
 ## 6. **Security Impact**
-- **Severity**: High  
+
 - **Attack Vector**: Remote (over-the-air, during pairing)  
 - **Impact**: Connection hijack prevention, authentication failure, DoS  
 
