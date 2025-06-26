@@ -10,7 +10,7 @@ device = {
     "rat": 0,
     "role": 1,
     "rx_len": 251,
-    "tx_len": 251,
+    "tx_len": 5,
     "packet_layer": 4,
     "config_file": "/home/yangting/Documents/Ble_Test/srcs/Config_File/Realtek/peripheral_07_30.ini",
     "learned_model_path": "/home/yangting/Documents/Ble_Test/result/dot_file/Realtek/peripheral_all_test.dot",

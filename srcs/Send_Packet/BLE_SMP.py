@@ -18,7 +18,7 @@ class BLE_SMP():
         self.access_address = access_address
 
     def PAIRING_REQUEST_PKT(self):
-        pkt = BTLE(access_addr=self.access_address) / BTLE_DATA() / L2CAP_Hdr()/ SM_Hdr()/ SM_Pairing_Request(iocap = 0x03, oob = 0x00, authentication = 0x2d, max_key_size = 0x10, initiator_key_distribution = 0x04, responder_key_distribution = 0x04)
+        pkt = BTLE(access_addr=self.access_address) / BTLE_DATA() / L2CAP_Hdr()/ SM_Hdr()/ SM_Pairing_Request(iocap = 0x04, oob = 0x00, authentication = 0x2d, max_key_size = 0x10, initiator_key_distribution = 0x04, responder_key_distribution = 0x04)
         return pkt
     def PAIRING_RESPONSE_PKT(self):
         pkt = BTLE(access_addr=self.access_address) / BTLE_DATA() / L2CAP_Hdr()/ SM_Hdr()/ SM_Pairing_Response(iocap = 0x03, oob = 0x00, authentication = 0x05, max_key_size = 0x10, initiator_key_distribution = 0x07, responder_key_distribution = 0x07)
@@ -90,19 +90,24 @@ class BLE_SMP_HANDLE():
         elif smp_pkt.getfieldval('sm_command') == 0x06:
             self.sm.ltk = smp_pkt.getfieldval('ltk')
             self.sm.ll_enc.set_ltk(smp_pkt.getfieldval('ltk')[::-1])
-
+            print("dltk " + smp_pkt.getfieldval('ltk').hex())
+        elif smp_pkt.getfieldval('sm_command') == 0x07:
+            self.sm.ll_enc.set_pediv(smp_pkt.getfieldval('ediv'))
+            self.sm.ll_enc.set_prand(smp_pkt.getfieldval('rand'))
+       
         elif smp_pkt.getfieldval('sm_command') == 0x08:
-            self.sm.ll_enc.set_irk(smp_pkt.getfieldval('irk'))
+            self.sm.ll_enc.set_pirk(smp_pkt.getfieldval('irk'))
         elif smp_pkt.getfieldval('sm_command') == 0x09:
             pass
         elif smp_pkt.getfieldval('sm_command') == 0x0a:
-            self.sm.ll_enc.set_sign_key(smp_pkt.getfieldval('csrk'))
+            self.sm.ll_enc.set_pcsrk(smp_pkt.getfieldval('csrk'))
 
         elif smp_pkt.getfieldval('sm_command') == 0x0c:
             self.sm.device_public_key_x = smp_pkt.getfieldval('key_x')
             print("device_public_key_x " + smp_pkt.getfieldval('key_x').hex())
             self.sm.device_public_key_y = smp_pkt.getfieldval('key_y')
             print("device_public_key_y " + smp_pkt.getfieldval('key_y').hex())
+       
 
         return pkt
 
@@ -110,9 +115,11 @@ class BLE_SMP_HANDLE():
 
     def send_smp_handle(self, pkt:Packet):
 
+        result = pkt
         smp_pkt = pkt.getlayer('SM_Hdr')
         if smp_pkt.getfieldval('sm_command') == 0x01:
             self.sm.set_preq(raw(smp_pkt))
+
            
         elif smp_pkt.getfieldval('sm_command') == 0x02:
             # smp_pkt.setfieldval('sm_command',0x01)
@@ -127,9 +134,9 @@ class BLE_SMP_HANDLE():
             else:
                 self.sm.calculate_secure_confirm_value()
             if self.sm.confirm is None:
-                return None
+                pass
             else:
-                return BTLE(access_addr=self.access_address) / BTLE_DATA() / L2CAP_Hdr() / SM_Hdr()/ SM_Confirm(confirm=self.sm.confirm)
+                result = BTLE(access_addr=self.access_address) / BTLE_DATA() / L2CAP_Hdr() / SM_Hdr()/ SM_Confirm(confirm=self.sm.confirm)
       
         elif smp_pkt.getfieldval('sm_command') == 0x04:
             if self.sm.role:
@@ -139,30 +146,39 @@ class BLE_SMP_HANDLE():
                 rand = self.sm.srnd
                 print("srnd " + rand.hex())
             
-            return_pkt = BTLE(access_addr=self.access_address) / BTLE_DATA() / L2CAP_Hdr() / SM_Hdr()/SM_Random(random = rand)
-            return return_pkt
+            result = BTLE(access_addr=self.access_address) / BTLE_DATA() / L2CAP_Hdr() / SM_Hdr()/SM_Random(random = rand)
+        
                
-        elif smp_pkt.getfieldval('sm_command') == 0x05:
+        # elif smp_pkt.getfieldval('sm_command') == 0x05:
 
-            pass
+        #     pass
         elif smp_pkt.getfieldval('sm_command') == 0x06:
-            pass
+            result = BTLE(access_addr=self.access_address) / BTLE_DATA() / L2CAP_Hdr() / SM_Hdr()/ SM_Encryption_Information(ltk = self.sm.current_ltk[::-1])
+        elif smp_pkt.getfieldval('sm_command') == 0x07:
+            result = BTLE(access_addr=self.access_address) / BTLE_DATA() / L2CAP_Hdr() / SM_Hdr()/ SM_Master_Identification(ediv = self.sm.ll_enc.get_ediv(),rand = self.sm.ll_enc.get_rand())
+        elif smp_pkt.getfieldval('sm_command') == 0x08:
+            result = BTLE(access_addr=self.access_address) / BTLE_DATA() / L2CAP_Hdr() / SM_Hdr()/ SM_Identity_Information(irk = self.sm.ll_enc.get_irk())
+        elif smp_pkt.getfieldval('sm_command') == 0x09:
+            result = BTLE(access_addr=self.access_address) / BTLE_DATA() / L2CAP_Hdr() / SM_Hdr()/ SM_Identity_Address_Information(atype = self.sm.ia_type, address = self.advertiser_address)
+        elif smp_pkt.getfieldval('sm_command') == 0x0a:
+            result = BTLE(access_addr=self.access_address) / BTLE_DATA() / L2CAP_Hdr() / SM_Hdr()/ SM_Signing_Information(csrk = self.sm.ll_enc.get_csrk())
+            
         elif smp_pkt.getfieldval('sm_command') == 0x0c:
             # key_dict = {"public_key_x":bytes.fromhex("5074875c077d5865abeac9ef63e4445f4279ff823ab401c58f0b7f83fc418fda"),"public_key_y":bytes.fromhex("5e6de136d2dbfe703278165ca73c95eec1f94ae84dfbe8506060f8446a181fac")}
             self.sm.ecckey_dict = ecc_generate_key(curve='P-256')
-            pkt = BTLE(access_addr=self.access_address) / BTLE_DATA() / L2CAP_Hdr() / SM_Hdr()/ SM_Public_Key(key_x = self.sm.ecckey_dict ['public_key_x'][::-1],key_y = self.sm.ecckey_dict ['public_key_y'][::-1])
-            return pkt
+            result = BTLE(access_addr=self.access_address) / BTLE_DATA() / L2CAP_Hdr() / SM_Hdr()/ SM_Public_Key(key_x = self.sm.ecckey_dict ['public_key_x'][::-1],key_y = self.sm.ecckey_dict ['public_key_y'][::-1])
+
 
             # for i in smp_list:           
             #     print(raw(i).hex())
             # return smp_list
         elif smp_pkt.getfieldval('sm_command') == 0x0d:
             if self.sm.dhkey_check is not None:
-                pkt = BTLE(access_addr=self.access_address) / BTLE_DATA() / L2CAP_Hdr() / SM_Hdr()/ SM_DHKey_Check(dhkey_check = self.sm.dhkey_check[::-1])
-                return pkt
+                result = BTLE(access_addr=self.access_address) / BTLE_DATA() / L2CAP_Hdr() / SM_Hdr()/ SM_DHKey_Check(dhkey_check = self.sm.dhkey_check[::-1])
+
             else:
                 pass
-               
+        return result   
 
 
         # sm = self.smp.security_managers[self.advertiser_address.lower()]

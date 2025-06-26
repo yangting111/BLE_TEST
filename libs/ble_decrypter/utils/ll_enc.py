@@ -1,6 +1,7 @@
 import os
 import re
 import sys
+from tkinter import N
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+"/../")
 from ble_decrypter.utils.kdf import *
 from Crypto.Cipher import AES
@@ -48,8 +49,8 @@ class LL_ENC:
         self.ivm = bytes(4)
         self.skds = bytes(8)
         self.ivs = bytes(4)
-        self.ediv = bytes(2)
-        self.rand = bytes(8)
+        self.ediv = os.urandom(2)
+        self.rand = os.urandom(8)
         self.skd = bytes(16)
         self.iv = bytes(8)
         self.sk = bytes(16)
@@ -57,31 +58,59 @@ class LL_ENC:
         self.conn_slave_packet_counter = 0
         self.ll_encryption = False
         self.role = role
-        self.irk = None
-        self.csrk = None
+        self.irk = os.urandom(16)
+       
+        self.pirk = None
+        self.csrk = os.urandom(16)
+        self.pcsrk = None
+        self.pediv = None
+        self.prand = None
         
         # packet to send
         self.ll_enc_rsp  = None
 
         self.lesc = False
-
-
+    def set_pcsrk(self, pcsrk:bytes):
+        self.pcsrk = pcsrk
+    def get_pcsrk(self):
+        return self.pcsrk
+    def set_csrk(self, csrk:bytes):
+        self.csrk = csrk
+    def get_csrk(self):
+        return self.csrk
+    def set_pediv(self, pediv:bytes):
+        self.pediv = pediv
+    def get_pediv(self):
+        return self.pediv
+    def set_pirk(self, pirk:bytes):
+        self.pirk = pirk
+    def get_pirk(self):
+        return self.pirk
+    def set_prand(self, prand:bytes):
+        self.prand = prand
+    def get_prand(self):
+        return self.prand
+    def set_ediv(self, ediv:bytes):
+        self.ediv = ediv
+    def get_ediv(self):
+        return self.ediv
+    def set_rand(self, rand:bytes):
+        self.rand = rand
+    def get_rand(self):
+        return self.rand
     def set_skdm(self, skdm:bytes):
         self.skdm = skdm
     def get_skdm(self):
         return self.skdm
     def set_ivm(self, ivm:bytes):
-
         self.ivm = ivm
     def get_ivm(self):
         return self.ivm
     def set_skds(self, skds:bytes):
-
         self.skds = skds
     def get_skds(self):
         return self.skds
     def set_ivs(self, ivs:bytes):
-
         self.ivs = ivs
     def get_ivs(self):
         return self.ivs
@@ -110,10 +139,6 @@ class LL_ENC:
         self.irk = irk
     def get_irk(self):
         return self.irk
-    def set_sign_key(self, sign_key:bytes):
-        self.csrk = sign_key
-    def get_sign_key(self):
-        return self.csrk
     def set_lesc(self, lesc:bool):
         self.lesc = lesc
     def get_lesc(self):
@@ -161,6 +186,8 @@ class LL_ENC:
         header = raw_pkt[4]  # Get ble header
         length = raw_pkt[5] + 4  # add 4 bytes for the mic
         crc = b'\x00\x00\x00'
+        if length > 255:
+            length = 255
 
         pkt_count = bytearray(struct.pack("<Q", self.conn_master_packet_counter)[:5])  # convert only 5 bytes
         pkt_count[4] |= 0x80 if self.role == 1 else 0x00  # Set for master -> slave
@@ -197,17 +224,17 @@ class LL_ENC:
         nonce = pkt_count + self.iv
 
 
-        print("iv "+self.iv.hex())
-        print("skd "+self.skd.hex())
-        print("sk "+self.sk.hex())
+        # print("iv "+self.iv.hex())
+        # print("skd "+self.skd.hex())
+        # print("sk "+self.sk.hex())
         if self.ltk is None:
             self.ltk = b"\x00" * 16
-        print("ltk "+self.ltk.hex())
+        # print("ltk "+self.ltk.hex())
         aes = AES.new(self.sk, AES.MODE_CCM, nonce=nonce, mac_len=4)  # mac = mic
         aes.update((header & 0xE3).to_bytes(length=1,byteorder="big"))  # Calculate mic over header cleared of NES, SN and MD
-        print("raw_pkt "+raw_pkt[6:-4 - 3].hex())
+        # print("raw_pkt "+raw_pkt[6:-4 - 3].hex())
         dec_pkt = aes.decrypt(raw_pkt[6:-4 - 3])  # get payload and exclude 3 bytes of crc
-        print("dec_pkt "+dec_pkt.hex())
+        # print("dec_pkt "+dec_pkt.hex())
 
         try:
             mic = raw_pkt[6 + length: -3]  # Get mic from payload and exclude crc
@@ -218,7 +245,7 @@ class LL_ENC:
             print("MIC Wrong")
             self.conn_slave_packet_counter += 1
             p = access_address + header.to_bytes(length=1,byteorder="big") + length.to_bytes(length=1,byteorder="big") + dec_pkt + b'\x00\x00\x00'
-            # self.machine.report_anomaly(msg='MIC Wrong', pkt=p)
+          
             return None     
 
     def ll_command(self, pkt:Packet, decrpted:bool = False):
@@ -248,6 +275,7 @@ class LL_ENC:
                 self.generate_skd()
                 self.generate_iv()
                 self.calculate_sk()
+               
             except AttributeError:
                 pass
         elif code == LL_START_ENC_REQ_OPCODE:
@@ -266,37 +294,40 @@ class LL_ENC:
             
     def get_packet(self, packet:Packet):
 
+        result = packet
         if self.ll_encryption:
-            enc_pkt = BTLE(self.ll_encrypted(raw(packet)))
-            return enc_pkt
+            # enc_pkt = BTLE(self.ll_encrypted(raw(packet)))
+            # result = enc_pkt
+            return result
 
         
         code = packet.getlayer('BTLE_CTRL').getfieldval('opcode')
         if code == LL_ENC_REQ_OPCODE:
             self.skdm = os.urandom(8)
             self.ivm = os.urandom(4)
-            return BTLE(access_addr = self.access_address)/BTLE_DATA()/ BTLE_CTRL() / LL_ENC_REQ(skdm=self.skdm, ivm=self.ivm)
+            result =  BTLE(access_addr = self.access_address)/BTLE_DATA()/ BTLE_CTRL() / LL_ENC_REQ(skdm=self.skdm, ivm=self.ivm)
         elif code == LL_ENC_RSP_OPCODE:
             self.skds = os.urandom(8)
             self.ivs = os.urandom(4)
             self.generate_skd()
             self.generate_iv()
             self.calculate_sk()
-            return BTLE(access_addr = self.access_address)/BTLE_DATA()/ BTLE_CTRL() / LL_ENC_RSP(skds=self.skds, ivs=self.ivs)
+            result = BTLE(access_addr = self.access_address)/BTLE_DATA()/ BTLE_CTRL() / LL_ENC_RSP(skds=self.skds, ivs=self.ivs)
+        #### test #####
         elif code == LL_START_ENC_RSP_OPCODE:
+
             if not self.lesc:
                 self.ll_encryption = True
                 
                 self.set_conn_master_packet_counter(0)
                 
                 self.set_conn_slave_packet_counter(0)
-        #### test #####
-        elif code == LL_START_ENC_REQ_OPCODE:
-            self.ll_encryption = True
+        # #### test #####
+        # elif code == LL_START_ENC_REQ_OPCODE:
+        #     self.ll_encryption = True
         #### test #####
             
-        else:
-            pass
+        return result
         # else:
         #     if self.ll_encryption:
         #         return self.ll_encrypted(raw(packet))

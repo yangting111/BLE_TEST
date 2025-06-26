@@ -12,7 +12,7 @@ device = {
     "rat": 0,
     "role": 1,
     "rx_len": 251,
-    "tx_len":251,
+    "tx_len": 251,
     "packet_layer":4,
     "config_file": "/home/yangting/Documents/Ble_Test/srcs/Config_File/Cypress/mode1_auth_sc_bonding_pairing_select_08_09_.ini",
     "learned_model_path": "/home/yangting/Documents/Ble_Test/result/dot_file/Cypress/ble_security_l2cap.dot",
